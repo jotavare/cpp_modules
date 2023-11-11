@@ -1,3 +1,8 @@
+# COLORS
+RESET	= "\033[0m"
+RED 	= "\033[31m"
+GREEN	= "\033[32m"
+
 # MAIN
 CC = c++
 NAME = megaphone
@@ -15,19 +20,19 @@ OBJS = $(SRCS:.cpp=.o)
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	echo "...Linking $(NAME)..."
-	$(CC) $(CFLAGS) $(NO_PRINT) $(OBJS) -o $(NAME)
+	@echo $(GREEN)"...linking $(NAME)..."$(RESET)
+	$(CC) $(CFLAGS) $(OBJS) -o $(NAME)
 
 %.o: %.cpp
-	echo "...Compiling $<..."
-	$(CC) $(CFLAGS) $(NO_PRINT) -c $< -o $@
+	@echo $(GREEN)"...compiling $<..."$(RESET)
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	echo "...Cleaning $(NAME) object files..."
+	@echo $(RED)"...cleaning $(NAME) object files..."$(RESET)
 	$(RM) $(OBJS)
 
 fclean: clean
-	echo "...Cleaning $(NAME)..."
+	@echo $(RED)"...cleaning $(NAME)..."$(RESET)
 	$(RM) $(NAME)
 
-.SILENT: all clean fclean
+re: fclean all
