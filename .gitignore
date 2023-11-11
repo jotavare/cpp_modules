@@ -1,4 +1,6 @@
 cpp_00/exercises/ex00/megaphone
+cpp_01/exercises/ex00/phonebook
+a.out
 *.o
 .vscode/
 */.vscode/

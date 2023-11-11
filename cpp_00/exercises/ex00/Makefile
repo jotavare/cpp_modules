@@ -10,7 +10,6 @@ RM = rm -f
 
 # FLAGS
 CFLAGS = -Wall -Wextra -Werror -std=c++98
-NO_PRINT = --no-print-directory
 
 # SOURCES
 SRCS = megaphone.cpp
