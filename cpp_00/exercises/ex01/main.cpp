@@ -9,6 +9,7 @@ int main()
     while (true)
     {
         command = phoneBook.getCommand();
+
         if (command == "ADD")
             phoneBook.addContact();
         else if (command == "SEARCH")
