@@ -5,14 +5,17 @@ GREEN	= "\033[32m"
 
 # MAIN
 CC = c++
-NAME = megaphone
+NAME = phonebook
 RM = rm -f
 
 # FLAGS
-CFLAGS = -Wall -Wextra -Werror -std=c++98
+CFLAGS = -Wall -Wextra -Werror -std=c++98 -g
 
 # SOURCES
-SRCS = megaphone.cpp
+SRCS =	main.cpp \
+		sources/phonebook.cpp \
+		sources/contact.cpp \
+		
 OBJS = $(SRCS:.cpp=.o)
 
 # RULES
@@ -21,6 +24,7 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	@echo $(GREEN)"...linking $(NAME)..."$(RESET)
 	$(CC) $(CFLAGS) $(OBJS) -o $(NAME)
+	
 
 %.o: %.cpp
 	@echo $(GREEN)"...compiling $<..."$(RESET)
