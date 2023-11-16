@@ -3,26 +3,23 @@
 
 #include "contact.hpp"
 
-using namespace std;
-
-class PhoneBook
-{
+class PhoneBook {
 public:
-    PhoneBook();
-    ~PhoneBook(){};
+  PhoneBook();
+  ~PhoneBook(){};
 
-    void addContact();
-    void searchContact();
-    void printMessage();
-    string getCommand();
+  void addContact();
+  void searchContact();
+  void printMessage();
 
 private:
-    static const int maxContacts = 8;
-    Contact contacts[maxContacts];
-    int numContacts;
+  static const int maxContacts = 8;
+  Contact contacts[maxContacts];
+  int numContacts;
 
-    string truncateString(const string &str);
-    void displayContact(const Contact &contact);
+  std::string getCommand();
+  std::string truncateString(const std::string &str);
+  void displayContact(const Contact &contact);
 };
 
 #endif

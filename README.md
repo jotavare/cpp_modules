@@ -19,7 +19,34 @@
 - Preprocessor file flag `-E`
 - Assembly file flag `-S`
 
+### Linux
+- `export PROMPT_DIRTRIM=2`
+
 ### Software
 - MinGW
 - WSL
 - Visual Studio
+- LLVM, Clang Format, C++
+
+### Rules
+- Compile with `c++` + `-Wall -Wextra -Werror` + `-std=c++98`;
+- Exercise directories will be named: `ex00`, `ex01`, ... , `exn`;
+- Class names in UpperCamelCase format;
+- Files containing class code will always be named according to the class name;
+- Output messages must be ended by a `\n` character (except when explicitely stated otherwise);
+- No coding style is enforced in the C++ modules;
+- You are allowed to use almost everything from the standard library;
+
+### Forbidden
+- Can’t use any other external library;
+- C++11 (and derived forms) and Boost libraries are forbidden;
+- The following functions are forbidden too: `*printf()`, `*alloc()` and `free()`;
+- Using namespace `<ns_name>` and friend keywords are forbidden;
+- You are allowed to use the STL in the Module 08 and 09 only. That means:
+  - No Containers (vector/list/map/and so forth);
+  - No Algorithms (anything that requires to include the `<algorithm>` header);
+- When you allocate memory (by using the `new` keyword), you must avoid memory leaks;
+- From Module 02 to Module 09, your classes must be designed in the Orthodox Canonical Form (except when explicitely stated otherwise);
+- Any function implementation put in a header file (except for function templates) means 0 to the exercise;
+- You should be able to use each of your headers independently from others. They must include all the dependencies they need;
+- You must avoid the problem of double inclusion by adding include guards;
