@@ -1,7 +1,25 @@
+<p align="center">
+  <img src="https://github.com/jotavare/jotavare/blob/main/42/banners/piscine_and_common_core/github_piscine_and_common_core_banner_cpp.png">
+</p>
+
+<p align="center">
+	<img src="https://img.shields.io/badge/status-in%20progress-yellow?style=flat-square"/>
+	<img src="https://img.shields.io/github/languages/top/jotavare/cpp_modules?color=%2312bab9&style=flat-square" />
+	<img src="https://img.shields.io/github/last-commit/jotavare/cpp_modules?color=%2312bab9&style=flat-square" />
+	<a href='https://www.linkedin.com/in/joaoptoliveira' target="_blank"><img alt='Linkedin' src='https://img.shields.io/badge/LinkedIn-100000?style=flat-square&logo=Linkedin&logoColor=white&labelColor=0A66C2&color=0A66C2'/></a>
+	<a href='https://profile.intra.42.fr/users/jotavare' target="_blank"><img alt='42' src='https://img.shields.io/badge/Porto-100000?style=flat-square&logo=42&logoColor=white&labelColor=000000&color=000000'/></a>
+</p>
+
+<p align="center">
+	<a href="#cpp-00">CPP 00</a> •
+	<a href="#norminette">Norminette</a> •
+	<a href="#license">License</a>
+</p>
+
 > [!NOTE]  
 > Under construction...
 
-### CPP 00
+## CPP 00
 - [(Life) Advice From The Creator of C++ ](https://www.youtube.com/watch?v=-QxI-RP6-HM) `Youtube`
 - [31 nooby C++ habits you need to ditch](https://www.youtube.com/watch?v=i_wDa2AS_8w) `Youtube`
 - [TLDR - CPP00 [42] (BR)](https://www.youtube.com/watch?v=TnrQMtxPeEg) `Youtube`
@@ -50,3 +68,8 @@
 - Any function implementation put in a header file (except for function templates) means 0 to the exercise;
 - You should be able to use each of your headers independently from others. They must include all the dependencies they need;
 - You must avoid the problem of double inclusion by adding include guards;
+
+## LICENSE
+<p>
+This work is published under the terms of <a href="https://github.com/jotavare/cpp_modules/blob/main/LICENSE">Unlicense</a>.
+</p>
