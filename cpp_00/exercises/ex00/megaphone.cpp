@@ -2,9 +2,8 @@
 #include <cctype>   // toupper
 
 /*
- * I can use elements from the standard library without using the prefix `std::`
- * Instead of std::cout or std::endl I can use cout or endl directly.
- * (using namespace std;)
+ * Note: I can use elements from the standard library without using the prefix `std::`
+ * Instead of std::cout or std::endl I can use cout or endl directly. (using namespace std;)
  */
 std::string messageUpperCase(std::string message)
 {
@@ -14,7 +13,7 @@ std::string messageUpperCase(std::string message)
 }
 
 /*
- * Instead of std::endl which flushes the buffer, i can use '\n' which is faster.
+ * Note: Instead of std::endl which flushes the buffer, i can use '\n' which is faster.
  * Usually we flush to ensure that the output is printed immediately.
  * I don't think its necessary in this case.
  *

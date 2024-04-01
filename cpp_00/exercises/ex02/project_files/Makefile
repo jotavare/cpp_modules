@@ -5,16 +5,15 @@ GREEN	= "\033[32m"
 
 # MAIN
 CC = c++
-NAME = phonebook
+NAME = Account
 RM = rm -f
 
 # FLAGS
 CFLAGS = -Wall -Wextra -Werror -std=c++98 -g
 
 # SOURCES
-SRCS =	main.cpp \
-		sources/PhoneBook.cpp \
-		sources/Contact.cpp \
+SRCS =	Account.cpp \
+		tests.cpp \
 		
 OBJS = $(SRCS:.cpp=.o)
 
