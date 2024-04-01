@@ -5,7 +5,7 @@ GREEN	= "\033[32m"
 
 # MAIN
 CC = c++
-NAME = Account
+NAME = account
 RM = rm -f
 
 # FLAGS
