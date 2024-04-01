@@ -1,4 +1,3 @@
-// header guard
 #ifndef PHONEBOOK_HPP
 #define PHONEBOOK_HPP
 
@@ -29,5 +28,4 @@ private:
   void displayContact(const Contact &contact);
 };
 
-// header guard end
 #endif

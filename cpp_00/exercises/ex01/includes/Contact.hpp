@@ -1,4 +1,3 @@
-// header guard
 #ifndef CONTACT_HPP
 #define CONTACT_HPP
 
@@ -24,5 +23,4 @@ public:
   std::string darkestSecret;
 };
 
-// header guard end
 #endif

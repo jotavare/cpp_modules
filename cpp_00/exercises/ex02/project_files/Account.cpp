@@ -64,7 +64,7 @@ void Account::displayAccountsInfos() {
 // destructor
 Account::~Account()
 {
-    // Display timestamp and account closure information
+    // display timestamp and account closure information
     _displayTimestamp();
     std::cout << "index:" << this->_accountIndex << ";"
          << "amount:" << this->_amount << ";"

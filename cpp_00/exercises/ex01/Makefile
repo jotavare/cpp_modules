@@ -4,12 +4,15 @@ RED 	= "\033[31m"
 GREEN	= "\033[32m"
 
 # MAIN
-CC = c++
+CXX = c++
 NAME = phonebook
 RM = rm -f
 
 # FLAGS
-CFLAGS = -Wall -Wextra -Werror -std=c++98 -g
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98
+
+# -fsanitize=address (helps to detect memory errors )
+# -pedantic (enables strict conformance to the C++ standard)
 
 # SOURCES
 SRCS =	main.cpp \
@@ -23,12 +26,12 @@ all: $(NAME)
 
 $(NAME): $(OBJS)
 	@echo $(GREEN)"...linking $(NAME)..."$(RESET)
-	$(CC) $(CFLAGS) $(OBJS) -o $(NAME)
+	$(CXX) $(CXXFLAGS) $(OBJS) -o $(NAME)
 	
 
 %.o: %.cpp
 	@echo $(GREEN)"...compiling $<..."$(RESET)
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:
 	@echo $(RED)"...cleaning $(NAME) object files..."$(RESET)
