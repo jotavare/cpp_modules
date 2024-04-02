@@ -24,7 +24,7 @@ Account::Account(int initial_deposit)
     // initialize number of withdrawals to 0
     this->_nbWithdrawals = 0;
     // update total amount across all accounts
-    this->_totalAmount = initial_deposit;
+    this->_totalAmount += initial_deposit;
 
     // display timestamp and account creation information
     _displayTimestamp();
@@ -147,10 +147,9 @@ void Account::_displayTimestamp(void)
     t_stmp = localtime(&t_stmp_ptr);
 	std::cout << "[";
     std::cout << t_stmp->tm_year + 1900;
-    std::cout << std::setw(2) << std::setfill('0') << t_stmp->tm_mon + 1;
-    std::cout << std::setw(2) << std::setfill('0') << t_stmp->tm_mday << "_";
-    std::cout << std::setw(2) << std::setfill('0') << t_stmp->tm_hour;
-    std::cout << std::setw(2) << std::setfill('0') << t_stmp->tm_min;
-    std::cout << std::setw(2) << std::setfill('0') << t_stmp->tm_sec;
-    std::cout << "] ";
+	std::cout << std::setfill('0') << std::setw(2) << t_stmp->tm_mon;
+	std::cout << std::setfill('0') << std::setw(2) << t_stmp->tm_mday << "_";
+	std::cout << std::setfill('0') << std::setw(2) << t_stmp->tm_hour;
+	std::cout << std::setfill('0') << std::setw(2) << t_stmp->tm_min;
+	std::cout << std::setfill('0') << std::setw(2) << t_stmp->tm_sec << "] ";
 }
