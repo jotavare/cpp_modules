@@ -1,25 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Zombie.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/03 16:50:25 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/03 16:50:26 by jotavare         ###   ########.fr       */
+/*   Created: 2024/04/03 16:52:39 by jotavare          #+#    #+#             */
+/*   Updated: 2024/04/03 16:53:22 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#ifndef ZOMBIE_HPP
+#define ZOMBIE_HPP
 
-int main(void)
+#include <iostream>
+
+class Zombie
 {
-    Zombie* new_zombie;  
+private:
+    std::string name;
 
-    randomChump("Jeff");
-    new_zombie = newZombie("Foo");
-    delete new_zombie;
+public:
+    Zombie(); // default constructor
+    ~Zombie(); // destructor (not necessary)
 
-    return 0;
-}
+    Zombie(std::string name); // constructor with parameter
 
+    // method
+    void announce(void);
+};
+
+Zombie* newZombie(std::string name);
+void randomChump(std::string name);
+
+#endif
