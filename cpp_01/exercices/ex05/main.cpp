@@ -5,23 +5,22 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/04 12:27:37 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/04 16:58:01 by jotavare         ###   ########.fr       */
+/*   Created: 2024/04/04 15:59:41 by jotavare          #+#    #+#             */
+/*   Updated: 2024/04/04 17:21:39 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Replace.hpp"
+#include "Harl.hpp"
 
 int main(int argc, char **argv)
 {
-    if (argc != 4 || !argv[1][0] || !argv[2][0] || !argv[3][0])
+    if (argc != 2)
     {
-        std::cout << "Need arguments > ./replace [filename] [s1] [s2]" << std::endl;
-        return 1;
+        std::cout << "Usage: ./harl [DEBUG/INFO/WARNING/ERROR]" << std::endl;
+        return (1);
     }
 
-    Losers losers(argv[1]);
-    losers.replace(argv[2], argv[3]);
-
-    return 0;
+    Harl harl;
+    harl.complain(argv[1]);
+    return (0);
 }
