@@ -1,25 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Weapon.cpp                                         :+:      :+:    :+:   */
+/*   replace.hpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/04 12:27:58 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/04 12:27:59 by jotavare         ###   ########.fr       */
+/*   Created: 2024/04/04 12:28:31 by jotavare          #+#    #+#             */
+/*   Updated: 2024/04/04 12:29:05 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Weapon.hpp"
+#ifndef REPLACE_HPP
+#define REPLACE_HPP
 
-Weapon::Weapon(std::string type) : _type(type) {}
+#include <iostream> // cout, cerr, endl
+#include <fstream>  // file stream library
+#include <cstdlib>  // exit function
 
-const std::string &Weapon::getType()
+class Losers
 {
-    return this->_type;
-}
+private:
+    std::string _inputFile;
+    std::string _outputFile;
 
-void Weapon::setType(std::string type)
-{
-    this->_type = type;
-}
+public:
+    Losers(std::string file);
+    ~Losers();
+
+    void replace(std::string s1, std::string s2);
+};
+
+#endif

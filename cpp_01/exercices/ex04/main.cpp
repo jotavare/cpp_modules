@@ -1,25 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Weapon.cpp                                         :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/04 12:27:58 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/04 12:27:59 by jotavare         ###   ########.fr       */
+/*   Created: 2024/04/04 12:27:37 by jotavare          #+#    #+#             */
+/*   Updated: 2024/04/04 12:27:38 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Weapon.hpp"
+#include "replace.hpp"
 
-Weapon::Weapon(std::string type) : _type(type) {}
-
-const std::string &Weapon::getType()
+int main(int argc, char **argv)
 {
-    return this->_type;
-}
+    if (argc != 4 || !argv[1][0] || !argv[2][0] || !argv[3][0])
+    {
+        std::cout << "Need arguments > ./replace [filename] [s1] [s2]" << std::endl;
+        return 1;
+    }
 
-void Weapon::setType(std::string type)
-{
-    this->_type = type;
+    Losers losers(argv[1]);
+    losers.replace(argv[2], argv[3]);
+
+    return 0;
 }
