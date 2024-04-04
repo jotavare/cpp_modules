@@ -6,7 +6,7 @@
 /*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/04 14:08:49 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/04 16:51:50 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/04/04 18:39:40 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 Harl::Harl()
 {
-    std::cout << "I am Harl created." << std::endl;
+    std::cout << "Harl created." << std::endl;
 }
 
 Harl::~Harl()

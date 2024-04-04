@@ -6,7 +6,7 @@
 /*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/04 16:49:12 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/04 16:52:06 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/04/04 18:41:17 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int main(int ac, char **av)
     Harl harl;
     if (ac != 2)
     {
-        std::cout << "Wrong ac :s try again!\n";
+        std::cout << "Need arguments > ./harlfilter [DEBUG/INFO/WARNING/ERROR]" << std::endl;
         return 0;
     }
 

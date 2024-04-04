@@ -13,7 +13,7 @@ CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -fsanitize=address -pedantic
 
 # SOURCES
 SRCS =	main.cpp \
-		harl.cpp \
+		Harl.cpp \
 		
 OBJS = $(SRCS:.cpp=.o)
 

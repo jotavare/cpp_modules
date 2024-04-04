@@ -9,10 +9,7 @@ NAME = brain
 RM = rm -f
 
 # FLAGS
-CXXFLAGS = -Wall -Wextra -Werror -std=c++98
-
-# -fsanitize=address (helps to detect memory errors )
-# -pedantic (enables strict conformance to the C++ standard)
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -fsanitize=address -pedantic
 
 # SOURCES
 SRCS =	main.cpp \

@@ -6,7 +6,7 @@
 /*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/04 12:28:02 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/04 12:28:03 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/04/04 17:44:48 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,17 +17,17 @@
 
 int main(void)
 {
-    std::string message = "HI THIS IS BRAIN";
-    std::string *ptr = &message;
-    std::string &ref = message;
+    std::string string = "HI THIS IS BRAIN";
+    std::string *stringPTR = &string;
+    std::string &stringREF = string;
 
-    std::cout << BOLD "Memory Address: " RESET <<&message << std::endl;
-    std::cout << BOLD "Memory Address: " RESET <<ptr << std::endl;
-    std::cout << BOLD "Memory Address: " RESET <<&ref << std::endl;
+    std::cout << BOLD "[string] Memory Address: " RESET << &string << std::endl;
+    std::cout << BOLD "[stringPTR] Memory Address: " RESET << stringPTR << std::endl;
+    std::cout << BOLD "[stringREF] Memory Address: " RESET << &stringREF << std::endl;
 
-    std::cout << BOLD "Value: " RESET << message << std::endl;
-    std::cout << BOLD "Value: " RESET << *ptr << std::endl;
-    std::cout << BOLD "Value: " RESET << ref << std::endl;
+    std::cout << BOLD "[string] Value: " RESET << string << std::endl;
+    std::cout << BOLD "[stringPTR] Value: " RESET << *stringPTR << std::endl;
+    std::cout << BOLD "[stringREF] Value: " RESET << stringREF << std::endl;
 
     return (0);
 }

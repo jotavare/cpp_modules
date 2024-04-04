@@ -6,7 +6,7 @@
 /*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/03 16:50:25 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/03 16:50:26 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/04/04 17:35:51 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,11 @@
 
 int main(void)
 {
-    Zombie* new_zombie;  
+    Zombie *new_zombie;
 
-    randomChump("Jeff");
+    randomChump("Banana");
     new_zombie = newZombie("Foo");
     delete new_zombie;
 
     return 0;
 }
-
