@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   initListMain.cpp                                   :+:      :+:    :+:   */
+/*   InitListMain.cpp                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jotavare <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/05 15:16:34 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/05 15:18:34 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/04/06 11:00:49 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "initList1.hpp"
-#include "initList2.hpp"
+#include "InitList1.hpp"
+#include "InitList2.hpp"
 
 int	main()
 {

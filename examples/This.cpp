@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   this.cpp                                           :+:      :+:    :+:   */
+/*   This.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jotavare <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/05 12:30:20 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/05 14:10:10 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/04/06 11:01:24 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
  * we can know this way that we are using an attribute from the class
  */
 
-int	main()
+int main()
 {
 	Sample instance;
 
@@ -43,7 +43,7 @@ Sample::~Sample()
 	return;
 }
 
-void	Sample::bar(void)
+void Sample::bar(void)
 {
 	std::cout << "Member function!" << std::endl;
 	return;

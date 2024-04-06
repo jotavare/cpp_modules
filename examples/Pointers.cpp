@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Pointers.cpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/04/06 11:01:13 by jotavare          #+#    #+#             */
+/*   Updated: 2024/04/06 11:01:15 by jotavare         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <iostream>
 #include <cstring>
 
@@ -21,12 +33,12 @@ int main()
      */
 
     // all these pointers are the same;
-    void* ptr1 = nullptr;
-    void* ptr2 = NULL;
-    void* ptr3 = 0;
+    void *ptr1 = nullptr;
+    void *ptr2 = NULL;
+    void *ptr3 = 0;
 
     // creating data on the heap
-    char* buffer = new char[8];
+    char *buffer = new char[8];
     memset(buffer, 0, 8);
 
     char **ptr = &buffer;

@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   References.cpp                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/04/06 11:01:18 by jotavare          #+#    #+#             */
+/*   Updated: 2024/04/06 11:01:21 by jotavare         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 /*
  * Unlike pointers that can point to null, references cannot be null;
  * They must be referencing a valid object;
@@ -8,7 +20,7 @@
 
 #include <iostream>
 
-void Increment(int* value)
+void Increment(int *value)
 {
     (*value)++;
 }
@@ -21,7 +33,7 @@ int main()
     std::cin.get();
 }
 
-void Increment(int& value)
+void Increment(int &value)
 {
     value++;
 }

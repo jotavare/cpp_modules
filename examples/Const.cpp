@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   const.cpp                                          :+:      :+:    :+:   */
+/*   Const.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jotavare <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/05 15:25:45 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/05 17:50:15 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/04/06 11:02:42 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
-#include "const.hpp"
+#include "Const.hpp"
 
 int main()
 {
@@ -21,7 +21,6 @@ int main()
 
 	return (0);
 }
-
 
 /*
  * we are not assigning the f value to the pi attribute
@@ -46,12 +45,13 @@ Sample::~Sample(void)
  * seems like its a good practice to use it if its not gonna change anything
  */
 
-void	Sample::bar(void) const
+void Sample::bar(void) const
 {
 	std::cout << "this->pi - " << this->pi << std::endl;
 	std::cout << "this->qd - " << this->qd << std::endl;
 
-	this->qd = 0;
+	// this won't work because we are trying to change a const variable
+	// this->qd = 0;
 
 	return;
 }

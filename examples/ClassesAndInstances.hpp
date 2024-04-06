@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   classesAndInstances.hpp                            :+:      :+:    :+:   */
+/*   ClassesAndInstances.hpp                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jotavare <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/05 11:24:56 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/05 11:42:15 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/04/06 11:03:11 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CLASSESANDINSTANCES_HPP
-# define CLASSESANDINSTANCES_HPP
+#define CLASSESANDINSTANCES_HPP
 
 /*
  * class names first letter capitalize
@@ -20,9 +20,9 @@
 
 class Sample
 {
-	public:
-		Sample(void);
-		~Sample(void);
+public:
+	Sample(void);
+	~Sample(void);
 };
 
 #endif

@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   initList1.cpp                                      :+:      :+:    :+:   */
+/*   InitList1.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jotavare <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/05 14:25:50 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/05 15:23:18 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/04/06 11:00:34 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
-#include "initList1.hpp"
+#include "InitList1.hpp"
 
 Sample1::Sample1(char p1, int p2, float p3)
 {

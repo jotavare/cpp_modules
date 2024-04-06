@@ -1,27 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   const.hpp                                          :+:      :+:    :+:   */
+/*   Const.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jotavare <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/05 15:25:38 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/05 17:31:53 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/04/06 11:02:34 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CONST_HPP
-# define CONST_HPP
+#define CONST_HPP
 
 class Sample
 {
-	float const pi;
-	int qd;
+	public:
+		float const pi;
+		int qd;
 
-	Sample(float const pi);
-	~Sample(void);
+		Sample(float const pi);
+		~Sample(void);
 
-	void bar(void) const;
-}
+		void bar(void) const;
+};
 
 #endif

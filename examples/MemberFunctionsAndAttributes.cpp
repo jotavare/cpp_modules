@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   memberFunctionsAndAttributes.cpp                   :+:      :+:    :+:   */
+/*   MemberFunctionsAndAttributes.cpp                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jotavare <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/05 11:46:02 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/05 12:12:02 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/04/06 11:01:03 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
-#include "memberFunctionsAndAttributes.hpp"
+#include "MemberFunctionsAndAttributes.hpp"
 
 int	main()
 {

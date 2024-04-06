@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Functions.cpp                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/04/06 11:01:56 by jotavare          #+#    #+#             */
+/*   Updated: 2024/04/06 11:01:57 by jotavare         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <iostream>
 
 /*
@@ -24,7 +36,7 @@ int main()
 {
     int result1 = Multiply(5, 8);
     std::cout << result1 << std::endl;
-    
+
     MultiplyDirectly();
 
     MultiplyAndLog(5, 8);

@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Header.hpp                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/04/06 11:01:54 by jotavare          #+#    #+#             */
+/*   Updated: 2024/04/06 11:01:55 by jotavare         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 /*
  * pragma once is a non-standard but widely supported preprocessor directive
  * that tells the compiler to include this file only once in the compilation
