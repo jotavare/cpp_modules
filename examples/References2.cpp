@@ -1,47 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   References.cpp                                     :+:      :+:    :+:   */
+/*   References2.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/06 11:01:18 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/06 11:01:21 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/04/06 13:23:18 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
- * Unlike pointers that can point to null, references cannot be null;
- * They must be referencing a valid object;
- * They are just sintax sugar;
- * Theres nothing they can do that pointers cant;
- * Use them in cases that pointers are not needed, so it looks cleaner;
- */
-
 #include <iostream>
 
-void Increment(int *value)
-{
-    (*value)++;
-}
-
 int main()
 {
-    int a = 5;
-    Increment(&a);
+    int numberOfBalls = 5;
 
-    std::cin.get();
-}
+    int *ballsPtr = &numberOfBalls;
+    int &ballsRef = numberOfBalls;
 
-void Increment(int &value)
-{
-    value++;
-}
+    std::cout << numberOfBalls << " " << *ballsPtr << " " << ballsRef << std::endl;
 
-int main()
-{
-    int a = 5;
-    Increment(a);
+    *ballsPtr = 21;
+    std::cout << numberOfBalls << std::endl;
+    ballsRef = 84;
+    std::cout << numberOfBalls << std::endl;
 
-    std::cin.get();
+    return (0);
 }
