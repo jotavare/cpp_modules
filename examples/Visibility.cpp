@@ -6,7 +6,7 @@
 /*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/06 11:26:16 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/06 11:29:40 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/04/06 11:31:54 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,15 @@
 
 int main()
 {
-    Sample sample;
+    Sample instance;
 
-    sample.publicFoo = 42;
-    sample.publicBar();
+    instance.publicFoo = 42;
+    std::cout << "instance.publicFoo: " << instance.publicFoo << std::endl;
+    // instance._privateFoo = 42;
+    // std::cout << "instance._privateFoo: " << instance._privateFoo << std::endl;
+
+    instance.publicBar();
+    // instance._privateBar();
     return (0);
 }
 
@@ -46,5 +51,11 @@ Sample::~Sample(void)
 void Sample::publicBar(void) const
 {
     std::cout << "publicBar function!" << std::endl;
+    return;
+}
+
+void Sample::_privateBar(void) const
+{
+    std::cout << "privateBar function!" << std::endl;
     return;
 }
