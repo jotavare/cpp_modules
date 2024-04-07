@@ -6,7 +6,15 @@
 /*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/06 16:15:40 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/06 16:15:41 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/04/07 19:36:32 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "Fixed.hpp"
+
+int main(void)
+{
+    Fixed a;
+    Fixed b(a);
+    Fixed c;
+}
