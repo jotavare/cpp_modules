@@ -6,17 +6,17 @@
 /*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/06 16:15:37 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/07 22:30:32 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/04/07 23:29:00 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fixed.hpp"
 
-Fixed::Fixed()
+Fixed::Fixed(void)
 {
 	std::cout << "Default constructor used!" << std::endl;
 	this->_fixedPointValue = 0;
-	std::cout << "Default constructor iniliazed the _fixedPointValue variable to " << this->_fixedPointValue << "!" << std::endl;
+	std::cout << "Default constructor iniliazed the _fixedPointValue variable!" << std::endl;
 }
 
 Fixed::Fixed(const Fixed &copy)
@@ -32,7 +32,7 @@ Fixed &Fixed::operator=(const Fixed &copy)
 	return *this;
 }
 
-Fixed::~Fixed()
+Fixed::~Fixed(void)
 {
 	std::cout << "Destructor used!" << std::endl;
 }
