@@ -1,24 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   References2.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jotavare <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/03 16:50:25 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/04 17:35:51 by jotavare         ###   ########.fr       */
+/*   Created: 2024/04/06 11:01:18 by jotavare          #+#    #+#             */
+/*   Updated: 2024/04/06 13:23:18 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include <iostream>
 
-int main(void)
+int main()
 {
-    Zombie *new_zombie;
+    int numberOfBalls = 5;
 
-    randomChump("Banana");
-    new_zombie = newZombie("Foo");
-    delete new_zombie;
+    int *ballsPtr = &numberOfBalls;
+    int &ballsRef = numberOfBalls;
 
-    return 0;
+    std::cout << numberOfBalls << " " << *ballsPtr << " " << ballsRef << std::endl;
+
+    *ballsPtr = 21;
+    std::cout << numberOfBalls << std::endl;
+    ballsRef = 84;
+    std::cout << numberOfBalls << std::endl;
+
+    return (0);
 }

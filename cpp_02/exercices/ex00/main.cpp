@@ -5,20 +5,24 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jotavare <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/03 16:50:25 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/04 17:35:51 by jotavare         ###   ########.fr       */
+/*   Created: 2024/04/06 16:15:40 by jotavare          #+#    #+#             */
+/*   Updated: 2024/04/07 20:01:04 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include "Fixed.hpp"
 
 int main(void)
 {
-    Zombie *new_zombie;
+    Fixed a;
+    Fixed b(a);
+    Fixed c;
 
-    randomChump("Banana");
-    new_zombie = newZombie("Foo");
-    delete new_zombie;
+    c = b;
 
-    return 0;
+    std::cout << a.getRawBits() << std::endl;
+    std::cout << b.getRawBits() << std::endl;
+    std::cout << c.getRawBits() << std::endl;
+
+    return (0);
 }

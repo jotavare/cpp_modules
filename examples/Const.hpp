@@ -1,24 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Const.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jotavare <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/03 16:50:25 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/04 17:35:51 by jotavare         ###   ########.fr       */
+/*   Created: 2024/04/05 15:25:38 by jotavare          #+#    #+#             */
+/*   Updated: 2024/04/06 11:02:34 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#ifndef CONST_HPP
+#define CONST_HPP
 
-int main(void)
+class Sample
 {
-    Zombie *new_zombie;
+	public:
+		float const pi;
+		int qd;
 
-    randomChump("Banana");
-    new_zombie = newZombie("Foo");
-    delete new_zombie;
+		Sample(float const pi);
+		~Sample(void);
 
-    return 0;
-}
+		void bar(void) const;
+};
+
+#endif

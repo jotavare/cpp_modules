@@ -1,24 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   HumanB.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jotavare <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/03 16:50:25 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/04 17:35:51 by jotavare         ###   ########.fr       */
+/*   Created: 2024/04/04 12:27:53 by jotavare          #+#    #+#             */
+/*   Updated: 2024/04/04 12:27:54 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include "HumanB.hpp"
 
-int main(void)
+HumanB::HumanB(std::string name) : _name(name)
 {
-    Zombie *new_zombie;
+    _weapon = NULL;
+}
 
-    randomChump("Banana");
-    new_zombie = newZombie("Foo");
-    delete new_zombie;
+void HumanB::attack()
+{
+    if (!_weapon)
+        std::cout << _name << " has no weapon to attack with" << std::endl;
+    else
+        std::cout << _name << " attacks with their " << _weapon->getType() << std::endl;
+}
 
-    return 0;
+void HumanB::setWeapon(Weapon &weapon)
+{
+    _weapon = &weapon;
 }

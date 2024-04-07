@@ -1,24 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   InitList2.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jotavare <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/03 16:50:25 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/04 17:35:51 by jotavare         ###   ########.fr       */
+/*   Created: 2024/04/05 14:33:51 by jotavare          #+#    #+#             */
+/*   Updated: 2024/04/06 11:01:46 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#ifndef INITLIST2_CPP
+#define INITLIST2_CPP
 
-int main(void)
+class Sample2
 {
-    Zombie *new_zombie;
+public:
+	char a1;
+	int a2;
+	float a3;
 
-    randomChump("Banana");
-    new_zombie = newZombie("Foo");
-    delete new_zombie;
+	Sample2(char p1, int p2, float p3);
+	~Sample2();
+};
 
-    return 0;
-}
+#endif

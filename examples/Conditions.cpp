@@ -1,24 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Conditions.cpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jotavare <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/03 16:50:25 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/04 17:35:51 by jotavare         ###   ########.fr       */
+/*   Created: 2024/04/06 11:02:58 by jotavare          #+#    #+#             */
+/*   Updated: 2024/04/06 11:02:59 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include <iostream>
 
-int main(void)
+int main()
 {
-    Zombie *new_zombie;
-
-    randomChump("Banana");
-    new_zombie = newZombie("Foo");
-    delete new_zombie;
-
-    return 0;
+    // constant is a value that cannot be changed;
+    const char *ptr = nullptr;
+    if (ptr)
+        std::cout << "ptr is not null" << std::endl;
+    // this is basicly a else and then another if nested else > if;
+    else if (ptr == "hello")
+        std::cout << "ptr is hello" << std::endl;
+    else
+        std::cout << "ptr is null" << std::endl;
 }

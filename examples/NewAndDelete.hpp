@@ -1,24 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   newAndDelete.hpp                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jotavare <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/03 16:50:25 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/04 17:35:51 by jotavare         ###   ########.fr       */
+/*   Created: 2024/04/06 12:51:51 by jotavare          #+#    #+#             */
+/*   Updated: 2024/04/06 12:58:16 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#ifndef NEWANDDELETE_HPP
+#define NEWANDDELETE_HPP
 
-int main(void)
+#include <iostream>
+
+class Student
 {
-    Zombie *new_zombie;
+private:
+    std::string _login;
 
-    randomChump("Banana");
-    new_zombie = newZombie("Foo");
-    delete new_zombie;
+public:
+    Student(std::string login) : _login(login)
+    {
+        std::cout << "Student " << this->_login << " is born" << std::endl;
+    }
 
-    return 0;
-}
+    ~Student(void)
+    {
+        std::cout << "Student " << this->_login << " died" << std::endl;
+    }
+};
+
+#endif

@@ -1,24 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Weapon.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jotavare <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/03 16:50:25 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/04 17:35:51 by jotavare         ###   ########.fr       */
+/*   Created: 2024/04/04 12:27:58 by jotavare          #+#    #+#             */
+/*   Updated: 2024/04/04 12:27:59 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include "Weapon.hpp"
 
-int main(void)
+Weapon::Weapon(std::string type) : _type(type) {}
+
+const std::string &Weapon::getType()
 {
-    Zombie *new_zombie;
+    return this->_type;
+}
 
-    randomChump("Banana");
-    new_zombie = newZombie("Foo");
-    delete new_zombie;
-
-    return 0;
+void Weapon::setType(std::string type)
+{
+    this->_type = type;
 }

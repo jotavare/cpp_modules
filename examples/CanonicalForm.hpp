@@ -1,24 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   CanonicalForm.hpp                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jotavare <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/03 16:50:25 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/04 17:35:51 by jotavare         ###   ########.fr       */
+/*   Created: 2024/04/06 15:35:54 by jotavare          #+#    #+#             */
+/*   Updated: 2024/04/06 15:48:16 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#ifndef CANONICALFORM_HPP
+#define CANONICALFORM_HPP
 
-int main(void)
+#include <iostream>
+
+class Sample
 {
-    Zombie *new_zombie;
+public:
+    Sample(void);
+    Sample(int const n);
+    Sample(Sample const &src);
 
-    randomChump("Banana");
-    new_zombie = newZombie("Foo");
-    delete new_zombie;
+    ~Sample(void);
 
-    return 0;
-}
+    Sample &operator=(Sample const &rhs);
+
+    int getFoo(void) const;
+    std::string serialize(void) const;
+
+private:
+    int _foo;
+};
+
+#endif

@@ -1,24 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   NonMemberFunctionsAndAttributes.hpp                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jotavare <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/03 16:50:25 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/04 17:35:51 by jotavare         ###   ########.fr       */
+/*   Created: 2024/04/06 12:14:01 by jotavare          #+#    #+#             */
+/*   Updated: 2024/04/06 12:18:34 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#ifndef NONMEMBERFUNCTIONSANDATTRIBUTES_HPP
+#define NONMEMBERFUNCTIONSANDATTRIBUTES_HPP
 
-int main(void)
+class Sample
 {
-    Zombie *new_zombie;
+public:
+    Sample(void);
+    ~Sample(void);
 
-    randomChump("Banana");
-    new_zombie = newZombie("Foo");
-    delete new_zombie;
+    static int getNbInst(void);
 
-    return 0;
-}
+private:
+    static int _nbInst;
+};
+
+#endif

@@ -1,24 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   NewAndDelete.cpp                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jotavare <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/03 16:50:25 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/04 17:35:51 by jotavare         ###   ########.fr       */
+/*   Created: 2024/04/06 12:51:49 by jotavare          #+#    #+#             */
+/*   Updated: 2024/04/06 13:04:22 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include "NewAndDelete.hpp"
 
-int main(void)
+int main()
 {
-    Zombie *new_zombie;
+    Student bob = Student("bfubar");
+    Student *jim = new Student("jfubar");
 
-    randomChump("Banana");
-    new_zombie = newZombie("Foo");
-    delete new_zombie;
+    delete jim; // jim is destroyed
 
-    return 0;
+    return (0); // bob is destroyed
 }
+
+/*
+int main()
+{
+    Student *students = new Student[42];
+
+    delete [] students;
+}
+*/

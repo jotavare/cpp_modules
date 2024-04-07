@@ -1,24 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   newZombie.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jotavare <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/03 16:50:25 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/04 17:35:51 by jotavare         ###   ########.fr       */
+/*   Created: 2024/04/03 16:52:30 by jotavare          #+#    #+#             */
+/*   Updated: 2024/04/03 16:52:31 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-int main(void)
+Zombie* newZombie(std::string name)
 {
-    Zombie *new_zombie;
-
-    randomChump("Banana");
-    new_zombie = newZombie("Foo");
-    delete new_zombie;
-
-    return 0;
+    // dynamically allocate memory on heap
+    Zombie* newZombie = new Zombie(name);
+    newZombie->announce(); 
+    return newZombie;
 }

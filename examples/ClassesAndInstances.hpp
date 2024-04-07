@@ -1,24 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   ClassesAndInstances.hpp                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jotavare <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/03 16:50:25 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/04 17:35:51 by jotavare         ###   ########.fr       */
+/*   Created: 2024/04/05 11:24:56 by jotavare          #+#    #+#             */
+/*   Updated: 2024/04/06 11:03:11 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#ifndef CLASSESANDINSTANCES_HPP
+#define CLASSESANDINSTANCES_HPP
 
-int main(void)
+/*
+ * class names first letter capitalize
+ * headers can be .hpp or .h, but its better to do put hpp
+ */
+
+class Sample
 {
-    Zombie *new_zombie;
+public:
+	Sample(void);
+	~Sample(void);
+};
 
-    randomChump("Banana");
-    new_zombie = newZombie("Foo");
-    delete new_zombie;
-
-    return 0;
-}
+#endif
