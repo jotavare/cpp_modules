@@ -1,0 +1,50 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Fixed.cpp                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jotavare <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/04/06 16:15:37 by jotavare          #+#    #+#             */
+/*   Updated: 2024/04/07 22:30:32 by jotavare         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "Fixed.hpp"
+
+Fixed::Fixed()
+{
+	std::cout << "Default constructor used!" << std::endl;
+	this->_fixedPointValue = 0;
+	std::cout << "Default constructor iniliazed the _fixedPointValue variable to " << this->_fixedPointValue << "!" << std::endl;
+}
+
+Fixed::Fixed(const Fixed &copy)
+{
+	std::cout << "Copy constructor used!" << std::endl;
+	*this = copy;
+}
+
+Fixed &Fixed::operator=(const Fixed &copy)
+{
+	std::cout << "Copy assigment operator used!" << std::endl;
+	this->_fixedPointValue = copy.getRawBits();
+	return *this;
+}
+
+Fixed::~Fixed()
+{
+	std::cout << "Destructor used!" << std::endl;
+}
+
+int Fixed::getRawBits(void) const
+{
+	std::cout << "getRawBits used!" << std::endl;
+	return this->_fixedPointValue;
+}
+
+void Fixed::setRawBits(int const raw)
+{
+	std::cout << "setRawBits used!" << std::endl;
+	this->_fixedPointValue = raw;
+}
