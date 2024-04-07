@@ -5,20 +5,22 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jotavare <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/03 16:50:25 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/04 17:35:51 by jotavare         ###   ########.fr       */
+/*   Created: 2024/04/04 15:59:41 by jotavare          #+#    #+#             */
+/*   Updated: 2024/04/04 18:09:14 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include "Harl.hpp"
 
-int main(void)
+int main(int argc, char **argv)
 {
-    Zombie *new_zombie;
+    if (argc != 2)
+    {
+        std::cout << "Need arguments > ./harl [DEBUG/INFO/WARNING/ERROR]" << std::endl;
+        return (1);
+    }
 
-    randomChump("Banana");
-    new_zombie = newZombie("Foo");
-    delete new_zombie;
-
-    return 0;
+    Harl harl;
+    harl.complain(argv[1]);
+    return (0);
 }

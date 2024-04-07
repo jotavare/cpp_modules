@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jotavare <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/03 16:50:25 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/04 17:35:51 by jotavare         ###   ########.fr       */
+/*   Created: 2024/04/03 16:53:03 by jotavare          #+#    #+#             */
+/*   Updated: 2024/04/04 17:40:51 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,13 @@
 
 int main(void)
 {
-    Zombie *new_zombie;
+    int quantity = 5;
 
-    randomChump("Banana");
-    new_zombie = newZombie("Foo");
-    delete new_zombie;
+    Zombie *horde = zombieHorde(quantity, "Banana");
 
-    return 0;
+    for (int i = 0; i < quantity; i++)
+        horde[i].announce();
+
+    delete[] horde;
+    return (0);
 }

@@ -1,24 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Accessors.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jotavare <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/03 16:50:25 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/04 17:35:51 by jotavare         ###   ########.fr       */
+/*   Created: 2024/04/06 11:51:52 by jotavare          #+#    #+#             */
+/*   Updated: 2024/04/06 11:53:29 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#ifndef ACCESSORS_HPP
+#define ACCESSORS_HPP
 
-int main(void)
+class Sample
 {
-    Zombie *new_zombie;
+public:
+    Sample(void);
+    ~Sample(void);
 
-    randomChump("Banana");
-    new_zombie = newZombie("Foo");
-    delete new_zombie;
+    int getFoo(void) const;
+    void setFoo(int v);
 
-    return 0;
-}
+private:
+    int _foo;
+};
+
+#endif

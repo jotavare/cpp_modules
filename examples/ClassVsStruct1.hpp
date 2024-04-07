@@ -1,24 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   ClassVsStruct1.hpp                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jotavare <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/03 16:50:25 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/04 17:35:51 by jotavare         ###   ########.fr       */
+/*   Created: 2024/04/06 11:36:16 by jotavare          #+#    #+#             */
+/*   Updated: 2024/04/06 11:51:32 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#ifndef CLASSVSSTRUCT1_HPP
+#define CLASSVSSTRUCT1_HPP
 
-int main(void)
+/*
+ * the only difference between a struct and a class is that members of a struct
+ * are public by default, while members of a class are private
+ */
+
+struct Sample1
 {
-    Zombie *new_zombie;
+    int foo;
 
-    randomChump("Banana");
-    new_zombie = newZombie("Foo");
-    delete new_zombie;
+    Sample1(void);
+    ~Sample1(void);
 
-    return 0;
-}
+    void bar(void) const;
+};
+
+#endif

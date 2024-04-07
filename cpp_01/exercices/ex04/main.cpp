@@ -5,20 +5,23 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jotavare <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/03 16:50:25 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/04 17:35:51 by jotavare         ###   ########.fr       */
+/*   Created: 2024/04/04 12:27:37 by jotavare          #+#    #+#             */
+/*   Updated: 2024/04/04 16:58:01 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include "Replace.hpp"
 
-int main(void)
+int main(int argc, char **argv)
 {
-    Zombie *new_zombie;
+    if (argc != 4 || !argv[1][0] || !argv[2][0] || !argv[3][0])
+    {
+        std::cout << "Need arguments > ./replace [filename] [s1] [s2]" << std::endl;
+        return 1;
+    }
 
-    randomChump("Banana");
-    new_zombie = newZombie("Foo");
-    delete new_zombie;
+    Losers losers(argv[1]);
+    losers.replace(argv[2], argv[3]);
 
     return 0;
 }

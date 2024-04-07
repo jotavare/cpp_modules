@@ -1,24 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   InitList2.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jotavare <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/03 16:50:25 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/04 17:35:51 by jotavare         ###   ########.fr       */
+/*   Created: 2024/04/05 14:44:37 by jotavare          #+#    #+#             */
+/*   Updated: 2024/04/06 11:00:41 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include <iostream>
+#include "InitList2.hpp"
 
-int main(void)
+Sample2::Sample2(char p1, int p2, float p3) : a1(p1), a2(p2), a3(p3)
 {
-    Zombie *new_zombie;
+	std::cout << "Constructor two!" << std::endl;
+	std::cout << "this->a1 = " << this->a1 << std::endl;
+	std::cout << "this->a2 = " << this->a2 << std::endl;
+	std::cout << "this->a3 = " << this->a3 << std::endl;
+}
 
-    randomChump("Banana");
-    new_zombie = newZombie("Foo");
-    delete new_zombie;
-
-    return 0;
+Sample2::~Sample2(void)
+{
+	std::cout << "Destructor two!" << std::endl;
+	return;
 }

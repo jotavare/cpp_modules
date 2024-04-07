@@ -1,24 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   ClassVsStruct2.hpp                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jotavare <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/03 16:50:25 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/04 17:35:51 by jotavare         ###   ########.fr       */
+/*   Created: 2024/04/06 11:36:16 by jotavare          #+#    #+#             */
+/*   Updated: 2024/04/06 11:48:28 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#ifndef CLASSVSSTRUCT2_HPP
+#define CLASSVSSTRUCT2_HPP
 
-int main(void)
+class Sample2
 {
-    Zombie *new_zombie;
+public:
+    int foo;
 
-    randomChump("Banana");
-    new_zombie = newZombie("Foo");
-    delete new_zombie;
+    Sample2(void);
+    ~Sample2(void);
 
-    return 0;
-}
+    void bar(void) const;
+};
+
+#endif

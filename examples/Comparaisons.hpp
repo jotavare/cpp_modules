@@ -1,24 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Comparaisons.hpp                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jotavare <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/03 16:50:25 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/04 17:35:51 by jotavare         ###   ########.fr       */
+/*   Created: 2024/04/06 12:01:51 by jotavare          #+#    #+#             */
+/*   Updated: 2024/04/06 12:03:56 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#ifndef COMPARAISONS_HPP
+#define COMPARAISONS_HPP
 
-int main(void)
+class Sample
 {
-    Zombie *new_zombie;
+    public:
+        Sample(int v);
+        ~Sample(void);
 
-    randomChump("Banana");
-    new_zombie = newZombie("Foo");
-    delete new_zombie;
+        int getFoo(void) const;
+        int compare(Sample *other) const;
+    
+    private:
+        int _foo;
+};
 
-    return 0;
-}
+#endif
