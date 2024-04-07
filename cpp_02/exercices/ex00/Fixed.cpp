@@ -6,44 +6,45 @@
 /*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/06 16:15:37 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/07 19:35:15 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/04/07 22:30:32 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fixed.hpp"
 
-Fixed::Fixed(int _fixedPoint) : _fixedPoint(0)
+Fixed::Fixed()
 {
-	std::cout << "Constructor!" << std::endl;
-	std::cout << "Constructor iniliazed the fixed point variable to" << _fixedPoint << "!" << std::endl;
+	std::cout << "Default constructor used!" << std::endl;
+	this->_fixedPointValue = 0;
+	std::cout << "Default constructor iniliazed the _fixedPointValue variable to " << this->_fixedPointValue << "!" << std::endl;
 }
 
 Fixed::Fixed(const Fixed &copy)
 {
-	std::cout << "Copy constructor!" << std::endl;
+	std::cout << "Copy constructor used!" << std::endl;
 	*this = copy;
 }
 
 Fixed &Fixed::operator=(const Fixed &copy)
 {
-	std::cout << "Operator overload!" << std::endl;
-	_fixedPoint = copy.getRawBits();
+	std::cout << "Copy assigment operator used!" << std::endl;
+	this->_fixedPointValue = copy.getRawBits();
 	return *this;
 }
 
 Fixed::~Fixed()
 {
-	std::cout << "Destructor!" << std::endl;
+	std::cout << "Destructor used!" << std::endl;
 }
 
 int Fixed::getRawBits(void) const
 {
-	std::cout << "getRawBits!" << std::endl;
-	return _fixedPoint;
+	std::cout << "getRawBits used!" << std::endl;
+	return this->_fixedPointValue;
 }
 
 void Fixed::setRawBits(int const raw)
 {
-	std::cout << "setRawBits!" << std::endl;
-	_fixedPoint = raw;
+	std::cout << "setRawBits used!" << std::endl;
+	this->_fixedPointValue = raw;
 }

@@ -5,7 +5,7 @@ GREEN	= "\033[32m"
 
 # MAIN
 CXX = c++
-NAME = harlfilter
+NAME = canonical
 RM = rm -f
 
 # FLAGS
