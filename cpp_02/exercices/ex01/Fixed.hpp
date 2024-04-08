@@ -6,7 +6,7 @@
 /*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/06 16:15:39 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/07 23:32:13 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/04/08 10:42:41 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,24 +19,25 @@
 class Fixed
 {
 private:
-    int _fixedPointValue;                      // subject variable
-    static const int _fractionalBitsValue = 8; // subject variable
+    int _fixedPointValue;
+    static const int _fractionalBitsValue = 8;
 
 public:
-    Fixed(void);                         // default constructor
-    Fixed(const int value);              // constructor with parameter int
-    Fixed(const float value);            // constructor with parameter float
-    Fixed(const Fixed &copy);            // copy constructor
-    Fixed &operator=(const Fixed &copy); // copy assigment overload
-    ~Fixed();                            // destructor
+    Fixed(void);
+    Fixed(const Fixed &copy);
+    Fixed &operator=(const Fixed &copy);
+    ~Fixed();
 
-    int getRawBits(void) const;     // get
-    void setRawBits(int const raw); // set
+    Fixed(const int value);   // constructor with parameter int
+    Fixed(const float value); // constructor with parameter float
+
+    int getRawBits(void) const;
+    void setRawBits(int const raw);
 
     float toFloat(void) const; // convert from fixed point value to float
     int toInt(void) const;     // convert from fixed point value to int
 };
 
-std::ostream &operator<<(std::ostream &out, const Fixed &right);
+std::ostream &operator<<(std::ostream &out, const Fixed &right); // output operator overload
 
 #endif

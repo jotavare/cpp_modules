@@ -6,23 +6,35 @@
 /*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/06 16:15:40 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/08 10:42:35 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/04/08 12:58:05 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Fixed.hpp"
+#include "Point.hpp"
 
-int main(void)
+// Function to check if a point is inside a triangle
+bool bsp(Point const a, Point const b, Point const c, Point const point);
+
+int main()
 {
-    Fixed a;
-    Fixed b(a);
-    Fixed c;
+    Point a(2, 5);
+    Point b(0, 0);
+    Point c(5, 0);
+    float x;
+    float y;
 
-    c = b;
+    std::cout << "Input x and y (x y): ";
+    std::cin >> x >> y;
+    if (std::cin.fail())
+    {
+        std::cout << "\n\tBad input\n"
+                  << std::endl;
+        return (EXIT_FAILURE);
+    }
 
-    std::cout << a.getRawBits() << std::endl;
-    std::cout << b.getRawBits() << std::endl;
-    std::cout << c.getRawBits() << std::endl;
-
-    return (0);
+    if (bsp(a, b, c, Point(x, y)))
+        std::cout << "(" << x << "," << y << ") is inside the triangle" << std::endl;
+    else
+        std::cout << "(" << x << "," << y << ") is outside the triangle" << std::endl;
+    return 0;
 }

@@ -1,28 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Point.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/06 16:15:40 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/08 10:42:35 by jotavare         ###   ########.fr       */
+/*   Created: 2024/04/08 12:06:05 by jotavare          #+#    #+#             */
+/*   Updated: 2024/04/08 12:40:03 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef POINT_HPP
+#define POINT_HPP
+
 #include "Fixed.hpp"
+#include <iostream>
+#include <cmath>
 
-int main(void)
+class Point
 {
-    Fixed a;
-    Fixed b(a);
-    Fixed c;
+private:
+    Fixed const _x;
+    Fixed const _y;
 
-    c = b;
+public:
+    // constructors and destructors
+    Point();
+    Point(const float pointX, const float pointY);
+    Point(const Point &copy);
+    Point &operator=(const Point &copy);
+    ~Point();
 
-    std::cout << a.getRawBits() << std::endl;
-    std::cout << b.getRawBits() << std::endl;
-    std::cout << c.getRawBits() << std::endl;
+    // get and set functions
+    Fixed getPointX() const;
+    Fixed getPointY() const;
+};
 
-    return (0);
-}
+#endif
