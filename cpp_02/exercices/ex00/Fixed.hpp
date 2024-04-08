@@ -6,7 +6,7 @@
 /*   By: jotavare <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/06 16:15:39 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/07 19:53:05 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/04/08 15:23:09 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,10 @@ private:
     static const int _fractionalBitsValue = 8; // subject variable
 
 public:
-    Fixed();                             // default constructor
+    Fixed(void);                         // default constructor
     Fixed(const Fixed &copy);            // copy constructor
     Fixed &operator=(const Fixed &copy); // copy assigment overload
-    ~Fixed();                            // destructor
+    ~Fixed(void);                        // destructor
 
     int getRawBits(void) const;     // get
     void setRawBits(int const raw); // set
