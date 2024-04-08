@@ -6,7 +6,7 @@
 /*   By: jotavare <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/06 16:15:39 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/08 15:23:09 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/04/08 15:25:10 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,30 @@
 #define FIXED_HPP
 
 #include <iostream>
+#include <cmath>
+
 class Fixed
 {
 private:
-    int _fixedPointValue;                      // subject variable
-    static const int _fractionalBitsValue = 8; // subject variable
+    int _fixedPointValue;
+    static const int _fractionalBitsValue = 8;
 
 public:
-    Fixed(void);                         // default constructor
-    Fixed(const Fixed &copy);            // copy constructor
-    Fixed &operator=(const Fixed &copy); // copy assigment overload
-    ~Fixed(void);                        // destructor
+    Fixed(void);
+    Fixed(const Fixed &copy);
+    Fixed &operator=(const Fixed &copy);
+    ~Fixed();
 
-    int getRawBits(void) const;     // get
-    void setRawBits(int const raw); // set
+    Fixed(const int value);   // constructor with parameter int
+    Fixed(const float value); // constructor with parameter float
+
+    int getRawBits(void) const;
+    void setRawBits(int const raw);
+
+    float toFloat(void) const; // convert from fixed point value to float
+    int toInt(void) const;     // convert from fixed point value to int
 };
+
+std::ostream &operator<<(std::ostream &out, const Fixed &object); // output operator overload
 
 #endif
