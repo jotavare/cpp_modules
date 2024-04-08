@@ -6,7 +6,7 @@
 /*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/06 16:15:40 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/08 14:14:07 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/04/08 15:38:03 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ bool bsp(Point const a, Point const b, Point const c, Point const point);
 int main()
 {
     float ax, ay, bx, by, cx, cy, x, y;
+    char check = 'Y';
 
     std::cout << "Input the [x y] values for point a: ";
     std::cin >> ax >> ay;
@@ -30,7 +31,7 @@ int main()
     Point b(bx, by);
     Point c(cx, cy);
 
-    while (true)
+    while (check == 'Y' || check == 'y')
     {
         std::cout << "Input the [x y] values for the point to check: ";
         std::cin >> x >> y;
@@ -45,6 +46,9 @@ int main()
             std::cout << GREEN "(" << x << "," << y << ") True. Point is inside the triangle." RESET << std::endl;
         else
             std::cout << RED "(" << x << "," << y << ") False. Point is outside the triangle." RESET << std::endl;
+
+        std::cout << "Do you want to continue? (Y/N): ";
+        std::cin >> check;
     }
 
     return 0;

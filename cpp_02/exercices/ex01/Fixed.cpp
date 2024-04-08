@@ -6,7 +6,7 @@
 /*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/06 16:15:37 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/08 10:42:37 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/04/08 15:25:13 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,13 +41,11 @@ Fixed::~Fixed()
 
 int Fixed::getRawBits(void) const
 {
-	std::cout << "getRawBits used!" << std::endl;
 	return (this->_fixedPointValue);
 }
 
 void Fixed::setRawBits(int const raw)
 {
-	std::cout << "setRawBits used!" << std::endl;
 	this->_fixedPointValue = raw;
 }
 

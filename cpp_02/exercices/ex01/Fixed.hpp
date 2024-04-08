@@ -6,7 +6,7 @@
 /*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/06 16:15:39 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/08 10:42:41 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/04/08 15:25:10 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,6 @@ public:
     int toInt(void) const;     // convert from fixed point value to int
 };
 
-std::ostream &operator<<(std::ostream &out, const Fixed &right); // output operator overload
+std::ostream &operator<<(std::ostream &out, const Fixed &object); // output operator overload
 
 #endif

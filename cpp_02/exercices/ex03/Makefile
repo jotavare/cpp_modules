@@ -9,7 +9,7 @@ NAME = bsp
 RM = rm -f
 
 # FLAGS
-CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -fsanitize=address -pedantic
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -pedantic
 
 # SOURCES
 SRCS =	main.cpp \
