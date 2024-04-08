@@ -6,7 +6,7 @@
 /*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/06 16:15:40 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/08 12:58:05 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/04/08 14:14:07 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,24 +17,35 @@ bool bsp(Point const a, Point const b, Point const c, Point const point);
 
 int main()
 {
-    Point a(2, 5);
-    Point b(0, 0);
-    Point c(5, 0);
-    float x;
-    float y;
+    float ax, ay, bx, by, cx, cy, x, y;
 
-    std::cout << "Input x and y (x y): ";
-    std::cin >> x >> y;
-    if (std::cin.fail())
+    std::cout << "Input the [x y] values for point a: ";
+    std::cin >> ax >> ay;
+    std::cout << "Input the [x y] values for point b: ";
+    std::cin >> bx >> by;
+    std::cout << "Input the [x y] values for point c: ";
+    std::cin >> cx >> cy;
+
+    Point a(ax, ay);
+    Point b(bx, by);
+    Point c(cx, cy);
+
+    while (true)
     {
-        std::cout << "\n\tBad input\n"
-                  << std::endl;
-        return (EXIT_FAILURE);
+        std::cout << "Input the [x y] values for the point to check: ";
+        std::cin >> x >> y;
+
+        if (std::cin.fail())
+        {
+            std::cout << "Wrong values! Exiting..." << std::endl;
+            return (EXIT_FAILURE);
+        }
+
+        if (bsp(a, b, c, Point(x, y)))
+            std::cout << GREEN "(" << x << "," << y << ") True. Point is inside the triangle." RESET << std::endl;
+        else
+            std::cout << RED "(" << x << "," << y << ") False. Point is outside the triangle." RESET << std::endl;
     }
 
-    if (bsp(a, b, c, Point(x, y)))
-        std::cout << "(" << x << "," << y << ") is inside the triangle" << std::endl;
-    else
-        std::cout << "(" << x << "," << y << ") is outside the triangle" << std::endl;
     return 0;
 }

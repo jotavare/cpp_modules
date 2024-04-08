@@ -6,7 +6,7 @@
 /*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 12:42:22 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/08 13:36:45 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/04/08 14:03:42 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,17 +37,12 @@ bool bsp(Point const a, Point const b, Point const c, Point const point)
     Fixed subTriangle2 = ((cY - aY) * (pointX - cX) + (aX - cX) * (pointY - cY));
 
     // calculate the barycentric coordinates
-    Fixed subTriangle1 = subTriangle1 / triangle;
-    Fixed subTriangle2 = subTriangle2 / triangle;
+    subTriangle1 = subTriangle1 / triangle;
+    subTriangle2 = subTriangle2 / triangle;
 
     // calculate the third barycentric coordinate
-    // 1 because the sum of the barycentric coordinates must be equal to 1
-    // if not, the point is outside the triangle
     Fixed subTriangle3 = Fixed(1) - subTriangle1 - subTriangle2;
 
     // check if the point is inside the triangle
-    // 0 because the barycentric coordinates are always positive, so the point is inside the triangle
-    // positive or zero (on the edge)
-    // negative, the point is outside the triangle (not considering the edge)
-    return subTriangle1 >= Fixed(0) && subTriangle2 >= Fixed(0) && subTriangle3 >= Fixed(0);
+    return subTriangle1 > Fixed(0) && subTriangle2 > Fixed(0) && subTriangle3 > Fixed(0);
 }

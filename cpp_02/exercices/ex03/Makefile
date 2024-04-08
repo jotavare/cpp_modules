@@ -15,7 +15,7 @@ CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -fsanitize=address -pedantic
 SRCS =	main.cpp \
 		Fixed.cpp \
 		Point.cpp \
-		Bsp.cpp \
+		bsp.cpp \
 		
 OBJS = $(SRCS:.cpp=.o)
 
