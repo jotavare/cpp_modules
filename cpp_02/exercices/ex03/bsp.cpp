@@ -6,7 +6,7 @@
 /*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 12:42:22 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/08 13:08:25 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/04/08 13:36:45 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,8 @@
 #include "Fixed.hpp"
 
 /*
- * a, b, c: The vertices of our beloved triangle.
- * point: The point to check.
  * Returns: True if the point is inside the triangle. False otherwise.
  * Thus, if the point is a vertex or on edge, it will return False.
- */
-
-/*
- * barycentric coordinates
- * triangle area = 0.5 * |(x1(y2 - y3) + x2(y3 - y1) + x3(y1 - y2))|
- * area of each of the triangles
- * 
- * point is inside the triangle if:
- * 0 <= alpha <= 1
- * 0 <= beta <= 1
- * 0 <= gamma <= 1
- * alpha + beta + gamma = 1
  */
 
 bool bsp(Point const a, Point const b, Point const c, Point const point)
@@ -43,11 +29,25 @@ bool bsp(Point const a, Point const b, Point const c, Point const point)
     Fixed const pointX = point.getPointX();
     Fixed const pointY = point.getPointY();
 
-    Fixed const triangle1 = ((bY - cY) * (pointX - cX) + (cX - bX) * (pointY - cY)) /
-                        ((bY - cY) * (aX - cX) + (cX - bX) * (aY - cY));
-    Fixed const triangle2 = ((cY - aY) * (pointX - cX) + (aX - cX) * (pointY - cY)) /
-                       ((bY - cY) * (aX - cX) + (cX - bX) * (aY - cY));
-    Fixed const triangle3 = Fixed(1) - triangle1 - triangle2;
+    // calculate the area of the triangle formed by the points
+    Fixed triangle = ((bY - cY) * (aX - cX) + (cX - bX) * (aY - cY));
 
-    return triangle1 >= Fixed(0) && triangle2 >= Fixed(0) && triangle3 >= Fixed(0);
+    // calculate the area of each of the sub-triangles
+    Fixed subTriangle1 = ((bY - cY) * (pointX - cX) + (cX - bX) * (pointY - cY));
+    Fixed subTriangle2 = ((cY - aY) * (pointX - cX) + (aX - cX) * (pointY - cY));
+
+    // calculate the barycentric coordinates
+    Fixed subTriangle1 = subTriangle1 / triangle;
+    Fixed subTriangle2 = subTriangle2 / triangle;
+
+    // calculate the third barycentric coordinate
+    // 1 because the sum of the barycentric coordinates must be equal to 1
+    // if not, the point is outside the triangle
+    Fixed subTriangle3 = Fixed(1) - subTriangle1 - subTriangle2;
+
+    // check if the point is inside the triangle
+    // 0 because the barycentric coordinates are always positive, so the point is inside the triangle
+    // positive or zero (on the edge)
+    // negative, the point is outside the triangle (not considering the edge)
+    return subTriangle1 >= Fixed(0) && subTriangle2 >= Fixed(0) && subTriangle3 >= Fixed(0);
 }
