@@ -1,24 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   FragTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/09 13:52:38 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/09 17:09:33 by jotavare         ###   ########.fr       */
+/*   Created: 2024/04/09 17:22:50 by jotavare          #+#    #+#             */
+/*   Updated: 2024/04/09 17:23:12 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ClapTrap.hpp"
-
-int main()
-{
-    ClapTrap claptrap("Jeff");
-
-    claptrap.attack("enemy");
-    claptrap.takeDamage(5);
-    claptrap.beRepaired(3);
-
-    return 0;
-}

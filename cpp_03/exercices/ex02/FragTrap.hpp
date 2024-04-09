@@ -1,24 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   FragTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/09 13:52:38 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/09 17:09:33 by jotavare         ###   ########.fr       */
+/*   Created: 2024/04/09 17:22:52 by jotavare          #+#    #+#             */
+/*   Updated: 2024/04/09 17:24:10 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ClapTrap.hpp"
+#include "ScavTrap.hpp"
 
-int main()
+class FragTap : public ScavTrap
 {
-    ClapTrap claptrap("Jeff");
-
-    claptrap.attack("enemy");
-    claptrap.takeDamage(5);
-    claptrap.beRepaired(3);
-
-    return 0;
+    public:
+    
 }

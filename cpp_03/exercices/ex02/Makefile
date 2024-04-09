@@ -5,7 +5,7 @@ GREEN	= "\033[32m"
 
 # MAIN
 CXX = c++
-NAME = claptrap
+NAME = scavtrap
 RM = rm -f
 
 # FLAGS
@@ -14,6 +14,7 @@ CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -pedantic
 # SOURCES
 SRCS =	main.cpp \
 		ClapTrap.cpp \
+		ScavTrap.cpp \
 		
 OBJS = $(SRCS:.cpp=.o)
 

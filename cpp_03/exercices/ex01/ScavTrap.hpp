@@ -1,24 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/09 13:52:38 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/09 17:09:33 by jotavare         ###   ########.fr       */
+/*   Created: 2024/04/09 16:21:01 by jotavare          #+#    #+#             */
+/*   Updated: 2024/04/09 16:51:55 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#pragma once
+
 #include "ClapTrap.hpp"
 
-int main()
+class ScavTrap : public ClapTrap
 {
-    ClapTrap claptrap("Jeff");
+public:
+    ScavTrap();
+    ScavTrap(std::string name);
+    ScavTrap(const ScavTrap &copy);
+    ScavTrap &operator=(const ScavTrap &copy);
+    ~ScavTrap(void);
 
-    claptrap.attack("enemy");
-    claptrap.takeDamage(5);
-    claptrap.beRepaired(3);
-
-    return 0;
-}
+    void attack(const std::string &target);
+    void guardGate();
+};

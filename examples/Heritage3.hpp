@@ -1,24 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Heritage3.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/09 13:52:38 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/09 17:09:33 by jotavare         ###   ########.fr       */
+/*   Created: 2024/04/09 15:59:37 by jotavare          #+#    #+#             */
+/*   Updated: 2024/04/09 16:07:13 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ClapTrap.hpp"
+#include <iostream>
 
-int main()
+class Leg
 {
-    ClapTrap claptrap("Jeff");
+    // add Leg class definition here
+};
 
-    claptrap.attack("enemy");
-    claptrap.takeDamage(5);
-    claptrap.beRepaired(3);
+class Quadruped
+{
+private:
+    std::string _name;
 
-    return 0;
-}
+    // can be acess by inherited classes
+protected:
+public:
+    void run();
+};
