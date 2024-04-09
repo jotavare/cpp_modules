@@ -6,12 +6,13 @@
 /*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 16:21:01 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/09 16:51:55 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/04/09 18:21:37 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
+#include <iostream>
 #include "ClapTrap.hpp"
 
 class ScavTrap : public ClapTrap

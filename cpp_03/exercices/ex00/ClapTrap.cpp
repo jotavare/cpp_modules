@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ClapTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
+/*   By: jotavare <jotavare@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 17:04:33 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/09 17:19:34 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/04/09 18:38:16 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,4 +60,45 @@ void ClapTrap::beRepaired(unsigned int amount)
 {
     std::cout << YELLOW "ClapTrap " << this->_TrapName << " is repaired by " << amount << " points!" RESET << std::endl;
     this->_HitPoints += amount;
+    this->_EnergyPoints -= 1;
+}
+
+std::string ClapTrap::getName(void) const
+{
+    return (this->_TrapName);
+}
+
+int ClapTrap::getHitPoints(void) const
+{
+    return (this->_HitPoints);
+}
+
+int ClapTrap::getEnergyPoints(void) const
+{
+    return (this->_EnergyPoints);
+}
+
+int ClapTrap::getAttackDamage(void) const
+{
+    return (this->_AttackDamage);
+}
+
+void ClapTrap::setName(std::string name)
+{
+    this->_TrapName = name;
+}
+
+void ClapTrap::setHitPoints(int hitPoints)
+{
+    this->_HitPoints = hitPoints;
+}
+
+void ClapTrap::setEnergyPoints(int energyPoints)
+{
+    this->_EnergyPoints = energyPoints;
+}
+
+void ClapTrap::setAttackDamage(int attackDamage)
+{
+    this->_AttackDamage = attackDamage;
 }

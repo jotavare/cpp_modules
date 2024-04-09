@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ClapTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
+/*   By: jotavare <jotavare@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 12:58:23 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/09 17:16:08 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/04/09 18:34:52 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,16 @@ public:
     ClapTrap(const ClapTrap &copy);
     ClapTrap &operator=(const ClapTrap &copy);
     ~ClapTrap(void);
+
+    void setName(std::string name);
+    void setHitPoints(int hitPoints);
+    void setEnergyPoints(int energyPoints);
+    void setAttackDamage(int attackDamage);
+
+    std::string getName(void) const;
+    int getHitPoints(void) const;
+    int getEnergyPoints(void) const;
+    int getAttackDamage(void) const;
 
     void attack(const std::string &target);
     void takeDamage(unsigned int amount);

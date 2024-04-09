@@ -5,7 +5,7 @@ GREEN	= "\033[32m"
 
 # MAIN
 CXX = c++
-NAME = fragtrap
+NAME = diamond
 RM = rm -f
 
 # FLAGS
@@ -16,6 +16,7 @@ SRCS =	main.cpp \
 		ClapTrap.cpp \
 		ScavTrap.cpp \
 		FragTrap.cpp \
+		DiamondTrap.cpp \
 		
 OBJS = $(SRCS:.cpp=.o)
 

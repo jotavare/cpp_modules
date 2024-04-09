@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ScavTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
+/*   By: jotavare <jotavare@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 16:22:29 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/09 17:17:05 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/04/09 19:18:41 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,4 +57,5 @@ void ScavTrap::attack(const std::string &target)
 void ScavTrap::guardGate()
 {
     std::cout << CYAN "ScavTrap " << this->_TrapName << " has entered in Gate keeper mode!" RESET << std::endl;
+    this->_EnergyPoints -= 1;
 }
