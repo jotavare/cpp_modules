@@ -16,8 +16,11 @@
 	<a href="#license">License</a>
 </p>
 
-> [!NOTE]  
-> Under construction...
+| CPP | Description |
+| --- | -- |
+| CPP 00 | This first module of C++ is designed to help you understand the specifities of the language when compared to C. Time to dive into Object Oriented Programming! |
+| CPP 01 | This module is designed to help you understand the memory allocation, reference, pointers to members and the usage of the switch in CPP. |
+| CPP 02 | This module is designed to help you understand Ad-hoc polymorphism, overloads and orthodox canonical classes in CPP. |
 
 ## CPP 00
 - [(Life) Advice From The Creator of C++ ](https://www.youtube.com/watch?v=-QxI-RP6-HM) `Youtube`
@@ -33,18 +36,11 @@
 - [Welcome to C++ (101 videos)](https://www.youtube.com/watch?v=18c3MTX0PK0&list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb) `Youtube` `The Cherno`
 - [C++ Weekly With Jason Turner](https://youtube.com/c/lefticus1/) - Weekly videos from Jason Turner. From basics to all the way to cursed code. `Youtube` `lefticus1`
 
-### Flags
+## TIPS
+- `export PROMPT_DIRTRIM=2`
+- Makefile rule CXX and CXXFLAGS
 - Preprocessor file flag `-E`
 - Assembly file flag `-S`
-
-### Linux
-- `export PROMPT_DIRTRIM=2`
-
-### Software
-- MinGW
-- WSL
-- Visual Studio
-- LLVM, Clang Format, C++
 
 ## RULES
 ```
