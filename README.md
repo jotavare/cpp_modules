@@ -16,11 +16,18 @@
 	<a href="#license">License</a>
 </p>
 
-| CPP | Description |
-| --- | -- |
-| CPP 00 | This first module of C++ is designed to help you understand the specifities of the language when compared to C. Time to dive into Object Oriented Programming! |
-| CPP 01 | This module is designed to help you understand the memory allocation, reference, pointers to members and the usage of the switch in CPP. |
-| CPP 02 | This module is designed to help you understand Ad-hoc polymorphism, overloads and orthodox canonical classes in CPP. |
+| CPP 00-09 | Description |
+| :-- | :-- |
+| [00](https://github.com/jotavare/cpp_modules/tree/main/cpp_00) | This first module of C++ is designed to help you understand the specificities of the language when compared to C. Time to dive into Object Oriented Programming! |
+| [01](https://github.com/jotavare/cpp_modules/tree/main/cpp_01) | This module is designed to help you understand the memory allocation, reference, pointers to members and the usage of the switch in CPP. |
+| [02](https://github.com/jotavare/cpp_modules/tree/main/cpp_02) | This module is designed to help you understand Ad-hoc polymorphism, overloads and orthodox canonical classes in CPP. |
+| [03](https://github.com/jotavare/cpp_modules/tree/main/cpp_03) | This module is designed to help you understand Inheritance in CPP. |
+| [04](https://github.com/jotavare/cpp_modules/tree/main/cpp_04) | This module is designed to help you understand Subtype polymorphism, abstract classes and interfaces in CPP. |
+| [05](https://github.com/jotavare/cpp_modules/tree/main/cpp_05) | This module is designed to help you understand Try/Catch and Exceptions in CPP. |
+| [06](https://github.com/jotavare/cpp_modules/tree/main/cpp_06) | This module is designed to help you understand the different casts in CPP. |
+| [07](https://github.com/jotavare/cpp_modules/tree/main/cpp_07) | This module is designed to help you understand Templates in CPP. |
+| [08](https://github.com/jotavare/cpp_modules/tree/main/cpp_08) | This module is designed to help you understand templated containers, iterators and algorithms in CPP. |
+| [09](https://github.com/jotavare/cpp_modules/tree/main/cpp_09) | This module is designed to help you understand the containers in CPP. |
 
 ## CPP 00
 - [(Life) Advice From The Creator of C++ ](https://www.youtube.com/watch?v=-QxI-RP6-HM) `Youtube`
