@@ -11,63 +11,53 @@
 </p>
 
 <p align="center">
-	<a href="#cpp-00">CPP 00</a> •
-	<a href="#norminette">Norminette</a> •
+	<a href="#about">About</a> •
+	<a href="#rules">Rules</a> •
+	<a href="forbidden">Forbidden</a> •
 	<a href="#license">License</a>
 </p>
 
-> [!NOTE]  
-> Under construction...
+## ABOUT
 
-## CPP 00
-- [(Life) Advice From The Creator of C++ ](https://www.youtube.com/watch?v=-QxI-RP6-HM) `Youtube`
-- [31 nooby C++ habits you need to ditch](https://www.youtube.com/watch?v=i_wDa2AS_8w) `Youtube`
-- [TLDR - CPP00 [42] (BR)](https://www.youtube.com/watch?v=TnrQMtxPeEg) `Youtube`
-- [C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md) `GitHub` `isocpp`
-- [Beginning C++ Programming - From Beginner to Beyond](https://www.udemy.com/course/beginning-c-plus-plus-programming/) `Udemy` `Paid`
-- [cppinsights](https://www.cppinsights.io/) - Check compiler changes. `Website`
-- [godbolt](https://www.godbolt.org/) - Compiler comparisons, assembly inspection, ... `Website`
-- [learncpp](https://www.learncpp.com/) - Covers everything from the absolute basics to advanced topics. It follows modern and best practice guidelines.
-- [cppreference](www.cppreference.com/) - Best language reference out there.
-- [The C++ Conference](https://www.youtube.com/user/CppCon/) `Youtube` `CppCon`
-- [Welcome to C++ (101 videos)](https://www.youtube.com/watch?v=18c3MTX0PK0&list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb) `Youtube` `The Cherno`
-- [C++ Weekly With Jason Turner](https://youtube.com/c/lefticus1/) - Weekly videos from Jason Turner. From basics to all the way to cursed code. `Youtube` `lefticus1`
+| Module | Description |
+| :-- | :-- |
+| **[CPP 00](https://github.com/jotavare/cpp_modules/tree/main/cpp_00)** | Understand the specificities of the language when compared to C. |
+| **[CPP 01](https://github.com/jotavare/cpp_modules/tree/main/cpp_01)** | Memory allocation, reference, pointers to members and the usage of the switch. |
+| **[CPP 02](https://github.com/jotavare/cpp_modules/tree/main/cpp_02)** | Ad-hoc polymorphism, overloads and orthodox canonical classes. |
+| **[CPP 03](https://github.com/jotavare/cpp_modules/tree/main/cpp_03)** | Inheritance. |
+| **[CPP 04](https://github.com/jotavare/cpp_modules/tree/main/cpp_04)** | Subtype polymorphism, abstract classes and interfaces. |
+| **[CPP 05](https://github.com/jotavare/cpp_modules/tree/main/cpp_05)** | Try/Catch and Exceptions. |
+| **[CPP 06](https://github.com/jotavare/cpp_modules/tree/main/cpp_06)** | Different casts. |
+| **[CPP 07](https://github.com/jotavare/cpp_modules/tree/main/cpp_07)** | Templates. |
+| **[CPP 08](https://github.com/jotavare/cpp_modules/tree/main/cpp_08)** | Templated containers, iterators and algorithms. |
+| **[CPP 09](https://github.com/jotavare/cpp_modules/tree/main/cpp_09)** | Containers. |
 
-### Flags
-- Preprocessor file flag `-E`
-- Assembly file flag `-S`
-
-### Linux
-- `export PROMPT_DIRTRIM=2`
-
-### Software
-- MinGW
-- WSL
-- Visual Studio
-- LLVM, Clang Format, C++
-
-### Rules
+## RULES
+```
 - Compile with `c++` + `-Wall -Wextra -Werror` + `-std=c++98`;
 - Exercise directories will be named: `ex00`, `ex01`, ... , `exn`;
 - Class names in UpperCamelCase format;
 - Files containing class code will always be named according to the class name;
-- Output messages must be ended by a `\n` character (except when explicitely stated otherwise);
+- Output messages must be ended by a `\n` character (except when explicitly stated otherwise);
 - No coding style is enforced in the C++ modules;
 - You are allowed to use almost everything from the standard library;
+```
 
-### Forbidden
+## FORBIDDEN
+```
 - Can’t use any other external library;
 - C++11 (and derived forms) and Boost libraries are forbidden;
 - The following functions are forbidden too: `*printf()`, `*alloc()` and `free()`;
 - Using namespace `<ns_name>` and friend keywords are forbidden;
-- You are allowed to use the STL in the Module 08 and 09 only. That means:
+- You are allowed to use the STL in the Modules 08 and 09 only. That means:
   - No Containers (vector/list/map/and so forth);
   - No Algorithms (anything that requires to include the `<algorithm>` header);
 - When you allocate memory (by using the `new` keyword), you must avoid memory leaks;
-- From Module 02 to Module 09, your classes must be designed in the Orthodox Canonical Form (except when explicitely stated otherwise);
+- From Module 02 to Module 09, your classes must be designed in the Orthodox Canonical Form (except when explicitly stated otherwise);
 - Any function implementation put in a header file (except for function templates) means 0 to the exercise;
 - You should be able to use each of your headers independently from others. They must include all the dependencies they need;
 - You must avoid the problem of double inclusion by adding include guards;
+```
 
 ## LICENSE
 <p>
