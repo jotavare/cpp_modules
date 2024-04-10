@@ -1,25 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Weapon.cpp                                         :+:      :+:    :+:   */
+/*   Cat.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jotavare <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/04 12:27:58 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/10 17:04:31 by jotavare         ###   ########.fr       */
+/*   Created: 2024/04/10 14:12:47 by jotavare          #+#    #+#             */
+/*   Updated: 2024/04/10 14:36:14 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Weapon.hpp"
+#pragma once
 
-Weapon::Weapon(std::string type) : _type(type) {}
+#include <iostream>
+#include "Animal.hpp"
 
-const std::string &Weapon::getType()
+class Cat : public Animal
 {
-    return this->_type;
-}
-
-void Weapon::setType(std::string type)
-{
-    this->_type = type;
-}
+    public:
+        Cat();
+        Cat(const Cat &copy);
+        Cat &operator=(const Cat &copy);
+        ~Cat();
+        
+        void makeSound() const;
+};
