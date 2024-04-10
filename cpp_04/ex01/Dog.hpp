@@ -1,25 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Weapon.cpp                                         :+:      :+:    :+:   */
+/*   Dog.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jotavare <jotavare@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/04 12:27:58 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/10 17:04:31 by jotavare         ###   ########.fr       */
+/*   Created: 2024/04/10 14:12:03 by jotavare          #+#    #+#             */
+/*   Updated: 2024/04/10 17:25:03 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Weapon.hpp"
+#pragma once
 
-Weapon::Weapon(std::string type) : _type(type) {}
+#include <iostream>
+#include "Animal.hpp"
+#include "Brain.hpp"
 
-const std::string &Weapon::getType()
+class Dog : public Animal
 {
-    return this->_type;
-}
+    public:
+        Dog();
+        Dog(const Dog &copy);
+        Dog &operator=(const Dog &copy);
+        ~Dog();
+        
+        void makeSound() const;
+        void brainAddress();
 
-void Weapon::setType(std::string type)
-{
-    this->_type = type;
-}
+    private:
+        Brain *_brain;
+};

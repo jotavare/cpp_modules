@@ -1,25 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Weapon.cpp                                         :+:      :+:    :+:   */
+/*   WrongAnimal.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jotavare <jotavare@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/04 12:27:58 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/10 17:04:31 by jotavare         ###   ########.fr       */
+/*   Created: 2024/04/10 14:46:06 by jotavare          #+#    #+#             */
+/*   Updated: 2024/04/10 15:09:23 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Weapon.hpp"
+#pragma once
 
-Weapon::Weapon(std::string type) : _type(type) {}
+#include <iostream>
 
-const std::string &Weapon::getType()
+class WrongAnimal
 {
-    return this->_type;
-}
+    protected:
+        std::string _type;
 
-void Weapon::setType(std::string type)
-{
-    this->_type = type;
-}
+    public:
+        WrongAnimal();
+        WrongAnimal(const WrongAnimal &copy);
+        WrongAnimal &operator=(const WrongAnimal &copy);
+        virtual ~WrongAnimal();
+
+        virtual void makeSound() const;
+        std::string getType() const;
+};
