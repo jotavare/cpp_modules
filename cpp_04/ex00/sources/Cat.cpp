@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   Cat.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jotavare <jotavare@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/10 14:23:16 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/10 17:48:45 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/05/09 18:06:30 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
-#include "Cat.hpp"
+#include "../includes/Cat.hpp"
 
 Cat::Cat()
 {
@@ -40,9 +40,4 @@ Cat::~Cat() {
 void Cat::makeSound() const
 {
     std::cout << "Meow meow!" << std::endl;
-}
-
-void Cat::brainAddress()
-{
-	std::cout << &(this->_brain) << std::endl;
 }

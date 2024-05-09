@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jotavare <jotavare@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/10 14:13:32 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/10 17:49:44 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/05/09 18:06:54 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Dog.hpp"
-#include "Cat.hpp"
+#include "../includes/Dog.hpp"
+#include "../includes/Cat.hpp"
 #include <iostream>
 #include <cstdlib>
 #include <ctime>

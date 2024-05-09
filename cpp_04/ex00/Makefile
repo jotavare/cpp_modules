@@ -12,12 +12,12 @@ RM = rm -f
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -pedantic
 
 # SOURCES
-SRCS =	main.cpp \
-		Animal.cpp \
-		Cat.cpp \
-		Dog.cpp \
-		WrongAnimal.cpp \
-		WrongCat.cpp \
+SRCS =	sources/main.cpp \
+		sources/Animal.cpp \
+		sources/Cat.cpp \
+		sources/Dog.cpp \
+		sources/WrongAnimal.cpp \
+		sources/WrongCat.cpp \
 		
 OBJS = $(SRCS:.cpp=.o)
 

@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   Dog.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jotavare <jotavare@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/10 14:28:03 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/10 17:24:41 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/05/09 18:06:32 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
-#include "Dog.hpp"
+#include "../includes/Dog.hpp"
 
 Dog::Dog()
 {
@@ -40,9 +40,4 @@ Dog::~Dog() {
 void Dog::makeSound() const
 {
     std::cout << "Woof Woof!" << std::endl;
-}
-
-void Dog::brainAddress()
-{
-    std::cout << &(this->_brain) << std::endl;
 }
