@@ -6,11 +6,11 @@
 /*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/06 16:15:40 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/08 15:38:03 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/05/09 17:42:17 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Point.hpp"
+#include "../includes/Point.hpp"
 
 // Function to check if a point is inside a triangle
 bool bsp(Point const a, Point const b, Point const c, Point const point);

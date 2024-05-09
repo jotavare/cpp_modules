@@ -6,11 +6,11 @@
 /*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 12:10:25 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/08 12:40:49 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/05/09 17:42:20 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Point.hpp"
+#include "../includes/Point.hpp"
 
 Point::Point() : _x(0), _y(0) {}
 

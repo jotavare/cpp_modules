@@ -6,12 +6,12 @@
 /*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 12:42:22 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/08 14:03:42 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/05/09 17:42:12 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Point.hpp"
-#include "Fixed.hpp"
+#include "../includes/Point.hpp"
+#include "../includes/Fixed.hpp"
 
 /*
  * Returns: True if the point is inside the triangle. False otherwise.

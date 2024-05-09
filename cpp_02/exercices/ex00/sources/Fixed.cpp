@@ -6,11 +6,11 @@
 /*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/06 16:15:37 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/08 15:39:50 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/05/09 17:41:48 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Fixed.hpp"
+#include "../includes/Fixed.hpp"
 
 Fixed::Fixed(void)
 {

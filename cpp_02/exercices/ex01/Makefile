@@ -12,8 +12,8 @@ RM = rm -f
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -fsanitize=address -pedantic
 
 # SOURCES
-SRCS =	main.cpp \
-		Fixed.cpp \
+SRCS =	sources/main.cpp \
+		sources/Fixed.cpp \
 		
 OBJS = $(SRCS:.cpp=.o)
 
