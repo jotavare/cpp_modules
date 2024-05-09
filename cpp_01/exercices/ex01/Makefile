@@ -15,9 +15,9 @@ RM = rm -f
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -fsanitize=address -pedantic
 
 # SOURCES
-SRCS =	main.cpp \
-		Zombie.cpp \
-		zombieHorde.cpp \
+SRCS =	sources/main.cpp \
+		sources/Zombie.cpp \
+		sources/zombieHorde.cpp \
 
 OBJS = $(SRCS:.cpp=.o)
 

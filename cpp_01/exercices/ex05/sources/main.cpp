@@ -5,33 +5,22 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/04 12:27:55 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/04 12:27:56 by jotavare         ###   ########.fr       */
+/*   Created: 2024/04/04 15:59:41 by jotavare          #+#    #+#             */
+/*   Updated: 2024/05/09 17:30:44 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "HumanA.hpp"
-#include "HumanB.hpp"
+#include "../includes/Harl.hpp"
 
-int main()
+int main(int argc, char **argv)
 {
+    if (argc != 2)
     {
-        Weapon club = Weapon("crude spiked club");
-
-        HumanA bob("Bob", club);
-        bob.attack();
-        club.setType("some other type of club");
-        bob.attack();
-    }
-    {
-        Weapon club = Weapon("crude spiked club");
-
-        HumanB jim("Jim");
-        jim.setWeapon(club);
-        jim.attack();
-        club.setType("some other type of club");
-        jim.attack();
+        std::cout << "Need arguments > ./harl [DEBUG/INFO/WARNING/ERROR]" << std::endl;
+        return (1);
     }
 
-    return 0;
+    Harl harl;
+    harl.complain(argv[1]);
+    return (0);
 }

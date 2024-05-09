@@ -6,11 +6,11 @@
 /*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/03 16:52:37 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/03 16:53:24 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/05/09 17:28:52 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include "../includes/Zombie.hpp"
 
 // default constructor
 Zombie::Zombie() {}

@@ -12,10 +12,10 @@ RM = rm -f
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -fsanitize=address -pedantic
 
 # SOURCES
-SRCS =	main.cpp \
-		HumanA.cpp \
-		HumanB.cpp \
-		Weapon.cpp \
+SRCS =	sources/main.cpp \
+		sources/HumanA.cpp \
+		sources/HumanB.cpp \
+		sources/Weapon.cpp \
 		
 OBJS = $(SRCS:.cpp=.o)
 

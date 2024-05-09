@@ -6,11 +6,11 @@
 /*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/04 16:49:12 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/04 18:41:17 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/05/09 17:38:49 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Harl.hpp"
+#include "../includes/Harl.hpp"
 
 int main(int ac, char **av)
 {
@@ -32,10 +32,13 @@ int main(int ac, char **av)
     {
     case 1:
         harl.complain("DEBUG");
+        break;
     case 2:
         harl.complain("INFO");
+        break;
     case 3:
         harl.complain("WARNING");
+        break;
     case 4:
         harl.complain("ERROR");
         break;

@@ -6,11 +6,11 @@
 /*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/04 12:27:41 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/04 16:57:58 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/05/09 17:30:29 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Replace.hpp"
+#include "../includes/Replace.hpp"
 
 Losers::Losers(std::string file) : _inputFile(file), _outputFile(file + ".replace") {}
 

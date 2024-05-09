@@ -6,11 +6,11 @@
 /*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/04 14:08:49 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/04 18:09:43 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/05/09 17:30:55 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Harl.hpp"
+#include "../includes/Harl.hpp"
 
 Harl::Harl()
 {
@@ -44,7 +44,6 @@ void Harl::error()
 
 void Harl::complain(std::string level)
 {
-    // array of four pointers and assign the addresses of the four functions
     void (Harl::*harl_functions[4])();
     harl_functions[0] = &Harl::debug;
     harl_functions[1] = &Harl::info;

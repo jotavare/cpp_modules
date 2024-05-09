@@ -1,25 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Weapon.cpp                                         :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jotavare <jotavare@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/04 12:27:58 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/10 17:04:31 by jotavare         ###   ########.fr       */
+/*   Created: 2024/04/03 16:53:03 by jotavare          #+#    #+#             */
+/*   Updated: 2024/05/09 17:29:22 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Weapon.hpp"
+#include "../includes/Zombie.hpp"
 
-Weapon::Weapon(std::string type) : _type(type) {}
-
-const std::string &Weapon::getType()
+int main(void)
 {
-    return this->_type;
-}
+    int quantity = 5;
 
-void Weapon::setType(std::string type)
-{
-    this->_type = type;
+    Zombie *horde = zombieHorde(quantity, "Banana");
+
+    for (int i = 0; i < quantity; i++)
+        horde[i].announce();
+
+    delete[] horde;
+    return (0);
 }

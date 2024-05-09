@@ -15,10 +15,10 @@ RM = rm -f
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -fsanitize=address -pedantic
 
 # SOURCES
-SRCS =	main.cpp \
-		newZombie.cpp \
-		randomChump.cpp \
-		Zombie.cpp \
+SRCS =	sources/main.cpp \
+		sources/newZombie.cpp \
+		sources/randomChump.cpp \
+		sources/Zombie.cpp \
 
 OBJS = $(SRCS:.cpp=.o)
 

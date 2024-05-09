@@ -1,20 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   HumanA.cpp                                         :+:      :+:    :+:   */
+/*   HumanB.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/04 12:27:51 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/04 12:27:52 by jotavare         ###   ########.fr       */
+/*   Created: 2024/04/04 12:27:53 by jotavare          #+#    #+#             */
+/*   Updated: 2024/05/09 17:29:58 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "HumanA.hpp"
+#include "../includes/HumanB.hpp"
 
-HumanA::HumanA(std::string name, Weapon &weapon) : _name(name), _weapon(weapon) {}
-
-void HumanA::attack(void)
+HumanB::HumanB(std::string name) : _name(name)
 {
-    std::cout << _name << " attacks with their " << _weapon.getType() << std::endl;
+    _weapon = NULL;
+}
+
+void HumanB::attack()
+{
+    if (!_weapon)
+        std::cout << _name << " has no weapon to attack with" << std::endl;
+    else
+        std::cout << _name << " attacks with their " << _weapon->getType() << std::endl;
+}
+
+void HumanB::setWeapon(Weapon &weapon)
+{
+    _weapon = &weapon;
 }

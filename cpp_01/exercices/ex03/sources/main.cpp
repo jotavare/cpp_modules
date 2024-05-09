@@ -5,23 +5,33 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/04 12:27:37 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/04 16:58:01 by jotavare         ###   ########.fr       */
+/*   Created: 2024/04/04 12:27:55 by jotavare          #+#    #+#             */
+/*   Updated: 2024/05/09 17:30:01 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Replace.hpp"
+#include "../includes/HumanA.hpp"
+#include "../includes/HumanB.hpp"
 
-int main(int argc, char **argv)
+int main()
 {
-    if (argc != 4 || !argv[1][0] || !argv[2][0] || !argv[3][0])
     {
-        std::cout << "Need arguments > ./replace [filename] [s1] [s2]" << std::endl;
-        return 1;
-    }
+        Weapon club = Weapon("crude spiked club");
 
-    Losers losers(argv[1]);
-    losers.replace(argv[2], argv[3]);
+        HumanA bob("Bob", club);
+        bob.attack();
+        club.setType("some other type of club");
+        bob.attack();
+    }
+    {
+        Weapon club = Weapon("crude spiked club");
+
+        HumanB jim("Jim");
+        jim.setWeapon(club);
+        jim.attack();
+        club.setType("some other type of club");
+        jim.attack();
+    }
 
     return 0;
 }
