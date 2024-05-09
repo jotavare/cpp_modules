@@ -20,10 +20,10 @@
 #include <limits.h> // INT_MAX
 
 // colored output
-#define RED "\e[31m"    // Red color
-#define GREEN "\e[32m"  // Green color
-#define RESET "\e[0m"   // Reset color
-#define BOLD "\e[1m"    // Bold formatting
+#define RESET "\033[0m"    // Reset color and style
+#define RED "\033[1;31m"   // Bold red color
+#define GREEN "\033[1;32m" // Bold green color
+#define BOLD "\033[1m"     // Bold style
 
 class Contact
 {

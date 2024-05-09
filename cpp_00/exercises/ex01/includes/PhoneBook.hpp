@@ -6,7 +6,7 @@
 /*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/03 16:51:52 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/03 16:51:53 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/05/09 17:25:03 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@
 // libraries
 #include "Contact.hpp"
 
-class PhoneBook {
+class PhoneBook
+{
 public:
   // constructor and destructor
   PhoneBook();

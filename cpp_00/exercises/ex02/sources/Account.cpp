@@ -6,7 +6,7 @@
 /*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/03 16:52:21 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/03 16:52:22 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/05/09 17:24:57 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <iomanip>
 #include <ctime>
 
-#include "Account.hpp"
+#include "../includes/Account.hpp"
 
 // static variables
 int Account::_nbAccounts = 0;

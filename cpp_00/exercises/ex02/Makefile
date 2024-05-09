@@ -9,14 +9,14 @@ NAME = account
 RM = rm -f
 
 # FLAGS
-CXXFLAGS = -Wall -Wextra -Werror -std=c++98
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -pedantic
 
 # -fsanitize=address (helps to detect memory errors )
 # -pedantic (enables strict conformance to the C++ standard)
 
 # SOURCES
-SRCS =	Account.cpp \
-		tests.cpp \
+SRCS =	sources/Account.cpp \
+		sources/tests.cpp \
 		
 OBJS = $(SRCS:.cpp=.o)
 

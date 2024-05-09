@@ -9,13 +9,13 @@ NAME = phonebook
 RM = rm -f
 
 # FLAGS
-CXXFLAGS = -Wall -Wextra -Werror -std=c++98
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -pedantic
 
 # -fsanitize=address (helps to detect memory errors )
 # -pedantic (enables strict conformance to the C++ standard)
 
 # SOURCES
-SRCS =	main.cpp \
+SRCS =	sources/main.cpp \
 		sources/PhoneBook.cpp \
 		sources/Contact.cpp \
 		

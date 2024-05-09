@@ -9,13 +9,13 @@ NAME = megaphone
 RM = rm -f
 
 # FLAGS
-CXXFLAGS = -Wall -Wextra -Werror -std=c++98
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -pedantic
 
 # -fsanitize=address (helps to detect memory errors )
 # -pedantic (enables strict conformance to the C++ standard)
 
 # SOURCES
-SRCS = megaphone.cpp
+SRCS = source/megaphone.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 # RULES
