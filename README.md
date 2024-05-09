@@ -18,8 +18,11 @@
 </p>
 
 ## ABOUT
+| Resources | Description |
+| :-- | :-- |
+| **[References](https://github.com/jotavare/42-resources?tab=readme-ov-file#04-05-cpp-module-00-09)** | All the references i used to study C++. |
 
-| Module | Description |
+| Modules | Description |
 | :-- | :-- |
 | **[CPP 00](https://github.com/jotavare/cpp_modules/tree/main/cpp_00)** | Understand the specificities of the language when compared to C. |
 | **[CPP 01](https://github.com/jotavare/cpp_modules/tree/main/cpp_01)** | Memory allocation, reference, pointers to members and the usage of the switch. |
