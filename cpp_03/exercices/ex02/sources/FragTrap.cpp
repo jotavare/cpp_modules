@@ -6,18 +6,18 @@
 /*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 17:22:50 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/09 18:21:39 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/05/09 18:02:06 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "FragTrap.hpp"
+#include "../includes/FragTrap.hpp"
 
 FragTrap::FragTrap() : ClapTrap()
 {
     std::cout << "FragTrap default constructor" << std::endl;
 }
 
-FragTrap::FragTrap(std::string name)
+FragTrap::FragTrap(std::string name) : ClapTrap(name)
 {
     std::cout << "FragTrap constructor with parameter" << std::endl;
     this->_TrapName = name;
@@ -26,7 +26,7 @@ FragTrap::FragTrap(std::string name)
     this->_AttackDamage = 30;
 }
 
-FragTrap::FragTrap(const FragTrap &copy)
+FragTrap::FragTrap(const FragTrap &copy) : ClapTrap(copy)
 {
     std::cout << "FragTrap copy constructor" << std::endl;
     *this = copy;

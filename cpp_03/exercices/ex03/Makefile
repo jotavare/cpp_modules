@@ -12,11 +12,11 @@ RM = rm -f
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -pedantic
 
 # SOURCES
-SRCS =	main.cpp \
-		ClapTrap.cpp \
-		ScavTrap.cpp \
-		FragTrap.cpp \
-		DiamondTrap.cpp \
+SRCS =	sources/main.cpp \
+		sources/ClapTrap.cpp \
+		sources/ScavTrap.cpp \
+		sources/FragTrap.cpp \
+		sources/DiamondTrap.cpp \
 		
 OBJS = $(SRCS:.cpp=.o)
 

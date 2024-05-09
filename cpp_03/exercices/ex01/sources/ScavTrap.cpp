@@ -3,21 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ScavTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jotavare <jotavare@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 16:22:29 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/09 19:16:58 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/05/09 18:00:39 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ScavTrap.hpp"
+#include "../includes/ScavTrap.hpp"
 
 ScavTrap::ScavTrap()
 {
     std::cout << "ScavTrap default constructor" << std::endl;
 }
 
-ScavTrap::ScavTrap(std::string name)
+ScavTrap::ScavTrap(std::string name) : ClapTrap(name)
 {
     std::cout << "ScavTrap constructor with parameter" << std::endl;
     this->_TrapName = name;
@@ -26,7 +26,7 @@ ScavTrap::ScavTrap(std::string name)
     this->_AttackDamage = 20;
 }
 
-ScavTrap::ScavTrap(const ScavTrap &copy)
+ScavTrap::ScavTrap(const ScavTrap &copy) : ClapTrap(copy)
 {
     std::cout << "ScavTrap copy constructor" << std::endl;
     *this = copy;

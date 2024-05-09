@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ClapTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jotavare <jotavare@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 13:30:52 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/09 18:44:47 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/05/09 17:52:13 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ClapTrap.hpp"
+#include "../includes/ClapTrap.hpp"
 
 ClapTrap::ClapTrap()
 {

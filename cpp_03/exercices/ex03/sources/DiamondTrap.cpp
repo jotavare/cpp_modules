@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   DiamondTrap.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jotavare <jotavare@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jotavare <jotavare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 18:47:43 by jotavare          #+#    #+#             */
-/*   Updated: 2024/04/09 19:33:41 by jotavare         ###   ########.fr       */
+/*   Updated: 2024/05/09 18:03:29 by jotavare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "DiamondTrap.hpp"
+#include "../includes/DiamondTrap.hpp"
 
 DiamondTrap::DiamondTrap()
 {
@@ -27,7 +27,7 @@ DiamondTrap::DiamondTrap(std::string name) : ClapTrap(name), ScavTrap(name), Fra
     _TrapName = name + "_clap_name";
 }
 
-DiamondTrap::DiamondTrap(const DiamondTrap &copy)
+DiamondTrap::DiamondTrap(const DiamondTrap &copy) : ClapTrap(copy), ScavTrap(copy), FragTrap(copy)
 {
     std::cout << "DiamondTrap copy constructor" << std::endl;
     *this = copy;
