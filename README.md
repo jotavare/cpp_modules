@@ -14,13 +14,14 @@
 	<a href="#about">About</a> •
 	<a href="#rules">Rules</a> •
 	<a href="forbidden">Forbidden</a> •
+	<a href="#contributing">Contributing</a> •
 	<a href="#license">License</a>
 </p>
 
 ## ABOUT
 | Resources | Description |
 | :-- | :-- |
-| **[References](https://github.com/jotavare/42-resources?tab=readme-ov-file#04-05-cpp-module-00-09)** | All the references i used to study C++. |
+| **[References](https://github.com/jotavare/42-resources/tree/main?tab=readme-ov-file#cpp-modules-00-09)** | All the references i used to study C++. |
 
 | Modules | Description |
 | :-- | :-- |
@@ -62,7 +63,10 @@
 - You must avoid the problem of double inclusion by adding include guards;
 ```
 
+## CONTRIBUTING
+
+If you find any issues or have suggestions for improvements, feel free to fork the repository and open an issue or submit a pull request.
+
 ## LICENSE
-<p>
-This work is published under the terms of <a href="https://github.com/jotavare/cpp_modules/blob/main/LICENSE">Unlicense</a>.
-</p>
+
+This project is available under the MIT License. For further details, please refer to the [LICENSE](https://github.com/jotavare/libft/blob/master/LICENSE) file.
