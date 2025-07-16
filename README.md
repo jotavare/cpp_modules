@@ -3,37 +3,45 @@
 </p>
 
 <p align="center">
-	<img src="https://img.shields.io/badge/status-in%20progress-yellow?style=flat-square"/>
+	<img src="https://img.shields.io/badge/status-finished-success?color=%2312bab9&style=flat-square"/>
 	<img src="https://img.shields.io/github/languages/top/jotavare/cpp_modules?color=%2312bab9&style=flat-square" />
 	<img src="https://img.shields.io/github/last-commit/jotavare/cpp_modules?color=%2312bab9&style=flat-square" />
-	<a href='https://www.linkedin.com/in/joaoptoliveira' target="_blank"><img alt='Linkedin' src='https://img.shields.io/badge/LinkedIn-100000?style=flat-square&logo=Linkedin&logoColor=white&labelColor=0A66C2&color=0A66C2'/></a>
+	<a href='https://www.linkedin.com/in/jotavare' target="_blank"><img alt='Linkedin' src='https://img.shields.io/badge/LinkedIn-blue?style=flat-square'/></a>
 	<a href='https://profile.intra.42.fr/users/jotavare' target="_blank"><img alt='42' src='https://img.shields.io/badge/Porto-100000?style=flat-square&logo=42&logoColor=white&labelColor=000000&color=000000'/></a>
 </p>
 
 <p align="center">
 	<a href="#about">About</a> •
 	<a href="#rules">Rules</a> •
-	<a href="forbidden">Forbidden</a> •
+	<a href="#forbidden">Forbidden</a> •
+	<a href="#contributing">Contributing</a> •
 	<a href="#license">License</a>
 </p>
 
 ## ABOUT
-| Resources | Description |
-| :-- | :-- |
-| **[References](https://github.com/jotavare/42-resources?tab=readme-ov-file#04-05-cpp-module-00-09)** | All the references i used to study C++. |
-
 | Modules | Description |
 | :-- | :-- |
-| **[CPP 00](https://github.com/jotavare/cpp_modules/tree/main/cpp_00)** | Understand the specificities of the language when compared to C. |
-| **[CPP 01](https://github.com/jotavare/cpp_modules/tree/main/cpp_01)** | Memory allocation, reference, pointers to members and the usage of the switch. |
-| **[CPP 02](https://github.com/jotavare/cpp_modules/tree/main/cpp_02)** | Ad-hoc polymorphism, overloads and orthodox canonical classes. |
-| **[CPP 03](https://github.com/jotavare/cpp_modules/tree/main/cpp_03)** | Inheritance. |
-| **[CPP 04](https://github.com/jotavare/cpp_modules/tree/main/cpp_04)** | Subtype polymorphism, abstract classes and interfaces. |
-| **[CPP 05](https://github.com/jotavare/cpp_modules/tree/main/cpp_05)** | Try/Catch and Exceptions. |
-| **[CPP 06](https://github.com/jotavare/cpp_modules/tree/main/cpp_06)** | Different casts. |
-| **[CPP 07](https://github.com/jotavare/cpp_modules/tree/main/cpp_07)** | Templates. |
-| **[CPP 08](https://github.com/jotavare/cpp_modules/tree/main/cpp_08)** | Templated containers, iterators and algorithms. |
-| **[CPP 09](https://github.com/jotavare/cpp_modules/tree/main/cpp_09)** | Containers. |
+| **[CPP 00](https://github.com/jotavare/cpp_modules/tree/main/cpp_modules/cpp_00)** | Understand the specificities of the language when compared to C. |
+| **[CPP 01](https://github.com/jotavare/cpp_modules/tree/main/cpp_modules/cpp_01)** | Memory allocation, reference, pointers to members and the usage of the switch. |
+| **[CPP 02](https://github.com/jotavare/cpp_modules/tree/main/cpp_modules/cpp_02)** | Ad-hoc polymorphism, overloads and orthodox canonical classes. |
+| **[CPP 03](https://github.com/jotavare/cpp_modules/tree/main/cpp_modules/cpp_03)** | Inheritance. |
+| **[CPP 04](https://github.com/jotavare/cpp_modules/tree/main/cpp_modules/cpp_04)** | Subtype polymorphism, abstract classes and interfaces. |
+
+> [!NOTE]
+> Modules 05 to 09 are not part of this repository.
+
+> [!NOTE]
+> For the rest of the projects and exams in the cursus, <a href="https://github.com/jotavare/42-common-core">click here</a>.
+
+## USAGE
+
+Each exercise is self-contained and builds on its own.
+
+```bash
+cd cpp_modules/cpp_02/exercices/ex00
+make
+./canonical
+```
 
 ## RULES
 ```
@@ -62,7 +70,10 @@
 - You must avoid the problem of double inclusion by adding include guards;
 ```
 
+## CONTRIBUTING
+
+This repository holds finished coursework and is not open to changes.
+
 ## LICENSE
-<p>
-This work is published under the terms of <a href="https://github.com/jotavare/cpp_modules/blob/main/LICENSE">Unlicense</a>.
-</p>
+
+This project is available under the MIT License. For further details, please refer to the [LICENSE](https://github.com/jotavare/cpp_modules/blob/main/LICENSE) file.
