@@ -19,10 +19,6 @@
 </p>
 
 ## ABOUT
-| Resources | Description |
-| :-- | :-- |
-| **[References](https://github.com/jotavare/42-resources/tree/main?tab=readme-ov-file#cpp-modules-00-09)** | All the references i used to study C++. |
-
 | Modules | Description |
 | :-- | :-- |
 | **[CPP 00](https://github.com/jotavare/cpp_modules/tree/main/cpp_modules)** | Understand the specificities of the language when compared to C. |
