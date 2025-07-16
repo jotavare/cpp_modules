@@ -23,7 +23,7 @@ private:
 public:
     Fixed(void);                         // default constructor
     Fixed(const Fixed &copy);            // copy constructor
-    Fixed &operator=(const Fixed &copy); // copy assigment overload
+    Fixed &operator=(const Fixed &copy); // copy assignment overload
     ~Fixed(void);                        // destructor
 
     int getRawBits(void) const;     // get

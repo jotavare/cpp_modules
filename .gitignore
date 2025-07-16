@@ -1,7 +1,46 @@
-cpp_00/exercises/ex00/megaphone
-cpp_01/exercises/ex00/phonebook
-cpp_02/project_files/account
-a.out
+# Build output.
 *.o
+*.a
+*.out
+*.gch
+
+# Compiled exercise binaries, one per ex00..ex0n directory.
+cpp_modules/*/exercices/*/megaphone
+cpp_modules/*/exercices/*/phonebook
+cpp_modules/*/exercices/*/account
+cpp_modules/*/exercices/*/zombie
+cpp_modules/*/exercices/*/zombiehorde
+cpp_modules/*/exercices/*/brain
+cpp_modules/*/exercices/*/human
+cpp_modules/*/exercices/*/replace
+cpp_modules/*/exercices/*/harl
+cpp_modules/*/exercices/*/harlfilter
+cpp_modules/*/exercices/*/canonical
+cpp_modules/*/exercices/*/convert
+cpp_modules/*/exercices/*/overload
+cpp_modules/*/exercices/*/bsp
+cpp_modules/*/exercices/*/claptrap
+cpp_modules/*/exercices/*/scavtrap
+cpp_modules/*/exercices/*/fragtrap
+cpp_modules/*/exercices/*/diamond
+cpp_modules/*/exercices/*/animal
+cpp_modules/*/exercices/*/abstract
+cpp_modules/*/exercices/*/interface
+
+# Editor and OS droppings.
 .vscode/
-*/.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+._*
+Thumbs.db
+
+# Never commit credentials.
+.env
+.env.*
+*.pem
+*.key
+
+# Subject PDFs are 42's, not ours to redistribute.
+*.pdf

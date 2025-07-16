@@ -16,7 +16,7 @@ Fixed::Fixed(void)
 {
 	// std::cout << "Default constructor used!" << std::endl;
 	this->_fixedPointValue = 0;
-	// std::cout << "Default constructor iniliazed the _fixedPointValue variable!" << std::endl;
+	// std::cout << "Default constructor initialized the _fixedPointValue variable!" << std::endl;
 }
 
 Fixed::Fixed(const Fixed &copy)
@@ -29,7 +29,7 @@ Fixed &Fixed::operator=(const Fixed &copy)
 {
 	if (this == &copy)
 		return (*this);
-	// std::cout << "Copy assigment operator used!" << std::endl;
+	// std::cout << "Copy assignment operator used!" << std::endl;
 	this->_fixedPointValue = copy.getRawBits();
 	return (*this);
 }
