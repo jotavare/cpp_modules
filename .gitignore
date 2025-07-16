@@ -1,7 +1,3 @@
-cpp_00/exercises/ex00/megaphone
-cpp_01/exercises/ex00/phonebook
-cpp_02/project_files/account
-a.out
-*.o
-.vscode/
-*/.vscode/
+*.out
+*.pdf
+*.swp
