@@ -35,31 +35,38 @@ void PhoneBook::addContact()
   {
     std::cout << BOLD "First name: " RESET;
     std::getline(std::cin, newContact.firstName);
-  } while (newContact.firstName.empty());
+  } while (std::cin.good() && newContact.firstName.empty());
 
   do
   {
     std::cout << BOLD "Last name: " RESET;
     std::getline(std::cin, newContact.lastName);
-  } while (newContact.lastName.empty());
+  } while (std::cin.good() && newContact.lastName.empty());
 
   do
   {
     std::cout << BOLD "Nickname: " RESET;
     std::getline(std::cin, newContact.nickname);
-  } while (newContact.nickname.empty());
+  } while (std::cin.good() && newContact.nickname.empty());
 
   do
   {
     std::cout << BOLD "Phone Number: " RESET;
     std::getline(std::cin, newContact.phoneNumber);
-  } while (newContact.phoneNumber.empty());
+  } while (std::cin.good() && newContact.phoneNumber.empty());
 
   do
   {
     std::cout << BOLD "Darkest secret: " RESET;
     std::getline(std::cin, newContact.darkestSecret);
-  } while (newContact.darkestSecret.empty());
+  } while (std::cin.good() && newContact.darkestSecret.empty());
+
+  // a stream that ended mid-entry leaves fields blank; do not store it
+  if (!std::cin.good())
+  {
+    std::cout << std::endl;
+    return;
+  }
 
   // all fields are filled? add the new contact to the phone book
   contacts[numContacts++] = newContact;
@@ -99,6 +106,14 @@ void PhoneBook::searchContact()
     std::cout << BOLD "Enter the index of the contact to display: " RESET;
     std::cin >> index;
 
+    // a closed stream can never yield a valid index; clearing and retrying
+    // here would loop forever
+    if (std::cin.eof())
+    {
+      std::cout << std::endl;
+      return;
+    }
+
     // ensure the input is valid (within range)
     if (std::cin.fail() || index >= numContacts || index < 0)
     {
@@ -109,8 +124,9 @@ void PhoneBook::searchContact()
     }
 
     // if input is valid, display the contact and return
-    else if (index >= 0 && index <= numContacts)
+    else
     {
+      std::cin.ignore(INT_MAX, '\n');
       displayContact(contacts[index]);
       return;
     }
