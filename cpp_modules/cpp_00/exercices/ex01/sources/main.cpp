@@ -22,7 +22,14 @@ int main()
   // loop to continuously accept user commands until the program is exited
   while (true)
   {
-    std::getline(std::cin, command); // get user input command
+    // a closed stream leaves command holding the previous one, so test the
+    // stream itself before dispatching on it
+    if (!std::getline(std::cin, command))
+    {
+      phoneBook.clear();
+      std::cout << RED "Exiting program..." RESET << std::endl;
+      return EXIT_SUCCESS;
+    }
 
     // check the user command
     if (command == "ADD") // add a contact
@@ -37,7 +44,7 @@ int main()
       phoneBook.printMessage();
       phoneBook.searchContact();
     }
-    else if (command == "EXIT" || std::cin.eof()) // exit the program
+    else if (command == "EXIT") // exit the program
     {
       phoneBook.clear();
       std::cout << RED "Exiting program..." RESET << std::endl;
