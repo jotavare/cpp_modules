@@ -12,6 +12,7 @@
 
 <p align="center">
 	<a href="#about">About</a> •
+	<a href="#usage">Usage</a> •
 	<a href="#rules">Rules</a> •
 	<a href="#forbidden">Forbidden</a> •
 	<a href="#contributing">Contributing</a> •
