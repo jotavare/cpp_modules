@@ -18,7 +18,7 @@
 
 int main()
 {
-    std::cout << "-----[Consctructors]-----" << std::endl;
+    std::cout << "-----[Constructors]-----" << std::endl;
     const Animal* meta = new Animal();
     const Animal* j = new Dog();
     const Animal* i = new Cat();

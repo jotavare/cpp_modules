@@ -81,7 +81,7 @@ std::ostream &operator<<(std::ostream &outputStream, const Fixed &object)
 	return (outputStream);
 }
 
-// comparasion operators
+// comparison operators
 bool Fixed::operator>(const Fixed &object) const
 {
 	return (this->getRawBits() > object.getRawBits());

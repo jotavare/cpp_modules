@@ -22,7 +22,7 @@ class Quadruped
 private:
     std::string _name;
 
-    // can be acess by inherited classes
+    // can be access by inherited classes
 protected:
 public:
     void run();

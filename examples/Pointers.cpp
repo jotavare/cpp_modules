@@ -26,9 +26,9 @@ int main()
     *ptr = 10;
 
     /*
-     * types doesnt really matter, they are just a way to us programmers
+     * types doesn't really matter, they are just a way to us programmers
      * manipulate the data and the compiler to understand, the computer
-     * doesnt care about the type;
+     * doesn't care about the type;
      * pointers are just interegers that store memory addresses;
      */
 

@@ -14,7 +14,7 @@
 #include "ClassesAndInstances.hpp"
 
 /*
- * consctructors and destructors dont have a return type
+ * constructors and destructors dont have a return type
  * with return or no return it would act the same way
  */
 
