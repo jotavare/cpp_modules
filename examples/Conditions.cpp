@@ -18,7 +18,7 @@ int main()
     const char *ptr = nullptr;
     if (ptr)
         std::cout << "ptr is not null" << std::endl;
-    // this is basicly a else and then another if nested else > if;
+    // this is basically a else and then another if nested else > if;
     else if (ptr == "hello")
         std::cout << "ptr is hello" << std::endl;
     else

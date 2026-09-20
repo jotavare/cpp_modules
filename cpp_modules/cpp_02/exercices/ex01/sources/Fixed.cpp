@@ -55,7 +55,7 @@ void Fixed::setRawBits(int const raw)
  * an example were the value equals to 5:
  * 5 << 8 = 1280 || 1280 / 256 = 5
  * 1280 represents 5 in fixed point notation
- * in binnary 5 is 101 and 1280 is 10100000000
+ * in binary 5 is 101 and 1280 is 10100000000
  * so the 0s after the 101 are the fractional bits
  */
 Fixed::Fixed(const int value)

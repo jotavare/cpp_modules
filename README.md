@@ -8,18 +8,18 @@
 </p>
 
 ## ABOUT
-| Modules | Description |
-| :-- | :-- |
-| **[CPP 00](https://github.com/jotavare/cpp_modules/tree/main/cpp_modules)** | Understand the specificities of the language when compared to C. |
-| **[CPP 01](https://github.com/jotavare/cpp_modules/tree/main/cpp_modules)** | Memory allocation, reference, pointers to members and the usage of the switch. |
-| **[CPP 02](https://github.com/jotavare/cpp_modules/tree/main/cpp_modules)** | Ad-hoc polymorphism, overloads and orthodox canonical classes. |
-| **[CPP 03](https://github.com/jotavare/cpp_modules/tree/main/cpp_modules)** | Inheritance. |
-| **[CPP 04](https://github.com/jotavare/cpp_modules/tree/main/cpp_modules)** | Subtype polymorphism, abstract classes and interfaces. |
-| **[CPP 05](https://github.com/jotavare/cpp_modules/tree/main/cpp_modules)** | Try/Catch and Exceptions. |
-| **[CPP 06](https://github.com/jotavare/cpp_modules/tree/main/cpp_modules)** | Different casts. |
-| **[CPP 07](https://github.com/jotavare/cpp_modules/tree/main/cpp_modules)** | Templates. |
-| **[CPP 08](https://github.com/jotavare/cpp_modules/tree/main/cpp_modules)** | Templated containers, iterators and algorithms. |
-| **[CPP 09](https://github.com/jotavare/cpp_modules/tree/main/cpp_modules)** | Containers. |
+| Modules | Description | Status |
+| :-- | :-- | :-- |
+| **[CPP 00](https://github.com/jotavare/cpp_modules/tree/main/cpp_modules/cpp_00)** | Understand the specificities of the language when compared to C. | Done |
+| **[CPP 01](https://github.com/jotavare/cpp_modules/tree/main/cpp_modules/cpp_01)** | Memory allocation, reference, pointers to members and the usage of the switch. | Done |
+| **[CPP 02](https://github.com/jotavare/cpp_modules/tree/main/cpp_modules/cpp_02)** | Ad-hoc polymorphism, overloads and orthodox canonical classes. | Done |
+| **[CPP 03](https://github.com/jotavare/cpp_modules/tree/main/cpp_modules/cpp_03)** | Inheritance. | Done |
+| **[CPP 04](https://github.com/jotavare/cpp_modules/tree/main/cpp_modules/cpp_04)** | Subtype polymorphism, abstract classes and interfaces. | Done |
+| **CPP 05** | Try/Catch and Exceptions. | Pending |
+| **CPP 06** | Different casts. | Pending |
+| **CPP 07** | Templates. | Pending |
+| **CPP 08** | Templated containers, iterators and algorithms. | Pending |
+| **CPP 09** | Containers. | Pending |
 
 > [!NOTE]
 > For the rest of the projects and exams in the cursus, <a href="https://github.com/jotavare/42-common-core">click here</a>.

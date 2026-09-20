@@ -65,7 +65,7 @@ int main()
 	 * This is because a new brain object would be created for each of them.
 	*/
 
-	std::cout << "\n---- shallow and deep copys ----" << std::endl;
+	std::cout << "\n---- shallow and deep copies ----" << std::endl;
 
 	std::cout << "Jeff's original address: ";
 	Jeff.brainAddress();

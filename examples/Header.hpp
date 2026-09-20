@@ -35,7 +35,7 @@
 #endif
 
 /*
- * If in a cpp file we include this header, all the libraries bellow
+ * If in a cpp file we include this header, all the libraries below
  * will be copy and pasted in the cpp file;
  */
 

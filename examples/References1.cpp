@@ -13,8 +13,8 @@
 /*
  * Unlike pointers that can point to null, references cannot be null;
  * They must be referencing a valid object;
- * They are just sintax sugar;
- * Theres nothing they can do that pointers cant;
+ * They are just syntax sugar;
+ * There's nothing they can do that pointers can't;
  * Use them in cases that pointers are not needed, so it looks cleaner;
  */
 

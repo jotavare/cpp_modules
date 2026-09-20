@@ -24,7 +24,7 @@ int main()
 
 /*
  * we are not assigning the f value to the pi attribute
- * we are inicializing my pi attribute to the f value
+ * we are initializing my pi attribute to the f value
  * const variable becomes a read-only variable
  */
 
